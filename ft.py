@@ -35,6 +35,7 @@ parser.add_argument("--repeats", default=1, type=int)
 parser.add_argument("--device", default="cuda")
 parser.add_argument("--plot_name", default="plot.png")
 parser.add_argument("--save_model", default=False, action="store_true")
+parser.add_argument("--evaluate", default=False, action="store_true")
 parser.add_argument(
     "--num_layers",
     default=1,
@@ -65,7 +66,7 @@ def parameters_to_fine_tune(model: nn.Module, mode: str) -> Iterable[nn.Paramete
     """
     if model.__class__.__name__ == "GPT2LMHeadModel":
         layers = model.transformer.h
-    elif model.__class__.__name__ == "BertLMHeadModel":
+    elif model.__class__.__name__ == "BertLMHeadModel" or model.__class__.__name__ == "BertForSequenceClassification":
         layers = model.bert.encoder.layer
     else:
         raise ValueError(
@@ -81,6 +82,8 @@ def parameters_to_fine_tune(model: nn.Module, mode: str) -> Iterable[nn.Paramete
     elif mode == "middle":
         num_layers = len(layers)
         parameters_to_fine_tune = layers[(num_layers+1) // 2 - (args.num_layers+1) // 2: (num_layers+1) // 2 + args.num_layers // 2].parameters()
+    elif mode.isnumeric():
+        parameters_to_fine_tune = layers[int(mode)].parameters()
     elif mode.startswith("lora"):
         raise NotImplementedError()
     else:
@@ -207,6 +210,7 @@ def get_performance_metric(
 
 def ft_classification(model, tok, x, y, mode, batch_size=8):
     model = copy.deepcopy(model)
+    print("Size of training set =", len(x), len(y))
 
     # if mode.startswith("lora"):
     #     for m in model.transformer.h:
@@ -239,11 +243,11 @@ def ft_classification(model, tok, x, y, mode, batch_size=8):
         if args.debug:
             break
 
-        if step % 10 == 0:
+        if step % 100 == 0: # Time-consuming part - increase the number to reduce frequency of validation
             with torch.inference_mode():
                 total_acc = get_acc(model(**all_x).logits, all_y)
             pbar.set_description(f"Fine-tuning acc: {total_acc:.04f}")
-            if total_acc > 0.75:
+            if total_acc >0.995:
                 break
     return model
 
@@ -365,7 +369,7 @@ def run_ft(
     datasets: List[str],
     ks: List[int],
     modes: List[str],
-    n_val: int = 125,
+    n_val: int = 200,
 ):
     results = {}
     for dataset in datasets:
@@ -388,21 +392,22 @@ def run_ft(
             stop_tokens = utils.stop_tokens(tokenizer)
 
             for k in ks:
-                print(
-                    f"Fine-tuning {model_name} on {dataset} with k={k} and mode={mode}"
-                )
                 utils.fix_random_seeds()
                 for repeat in range(args.repeats):
                     if repeat > 0:
                         print(f"Beginning repeat #{repeat}")
                     if utils.is_classification(dataset) != -1:
-                        fine_tuned = ft_classification(
-                            model,
-                            tokenizer,
-                            train["x"][: k * 5],
-                            train["y"][: k * 5],
-                            mode,
-                        )
+                        if args.evaluate:
+                            fine_tuned = model.to(DEVICE)
+                        else:
+                            print(f"Fine-tuning {model_name} on {dataset} with k={k} and mode={mode}")
+                            fine_tuned = ft_classification(
+                                model,
+                                tokenizer,
+                                train["x"][: k * utils.is_classification(dataset)],
+                                train["y"][: k * utils.is_classification(dataset)],
+                                mode,
+                            )
                         val_acc = eval(fine_tuned, tokenizer, val)
                         results["_".join([model_name, dataset, str(k), mode])] = val_acc
                     else:
@@ -453,11 +458,11 @@ def run_ft(
                             f"Writing results to: {utils.RESULTS_DIR}/{question}/{k_}.json"
                         )
                         with open(
-                            f"{utils.RESULTS_DIR}/{question}/{k_}.json", "a+"
+                            f"{utils.RESULTS_DIR}/{question}/{k_}.json", "w+"
                         ) as f:
                             json.dump({"metric": v}, f)
                     results = {}
-                    if args.model_save:
+                    if args.save_model:
                         print("Saving model...")
                         if not os.path.exists(f"{utils.RESULTS_DIR}/models"):
                             os.makedirs(f"{utils.RESULTS_DIR}/models")

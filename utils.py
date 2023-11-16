@@ -1,5 +1,5 @@
 from typing import List, Optional,Tuple
-from collections import defaultdict
+from collections import defaultdict, Counter
 import datasets
 import transformers
 import logging
@@ -23,10 +23,18 @@ RESULTS_DIR = (
     "results" if "RESULTS_DIR" not in os.environ else os.environ["RESULTS_DIR"]
 )
 print(f"Using results dir: {RESULTS_DIR}")
+glue_datasets = ["sst2", "cola", "mrpc", "qnli", "rte", "wnli"]
 
 
 def is_classification(dataset):
-    return {"amazon": 5}.get(dataset, -1)
+    ### name of original dataset should not contain _aug ###
+    dataset_dict = {"amazon": 5, "sst2": 2, "cola": 2, "mrpc": 2, "qnli": 2, "rte": 2, 
+    "wnli": 2, "yelp_polarity": 2}
+    if dataset in dataset_dict.keys():
+        return dataset_dict[dataset]
+    if dataset.startswith(tuple([name+"_aug" for name in dataset_dict.keys()])):
+        return dataset_dict[dataset.split("_aug")[0]]
+    return -1
 
 
 def model2hfname(model: str) -> str:
@@ -42,6 +50,14 @@ def model2hfname(model: str) -> str:
         "gpt2-lg": "gpt2-large",
         "gpt2": "gpt2-xl",
         "neo": "EleutherAI/gpt-neo-2.7B",
+        "sst2": "gchhablani/bert-base-cased-finetuned-sst2",
+        "cola": "gchhablani/bert-base-cased-finetuned-cola",
+        "mrpc": "gchhablani/bert-base-cased-finetuned-mrpc",
+        "qnli": "gchhablani/bert-base-cased-finetuned-qnli",
+        "rte": "gchhablani/bert-base-cased-finetuned-rte",
+        "wnli": "gchhablani/bert-base-cased-finetuned-wnli",
+        "imdb": "Wakaka/bert-finetuned-imdb",
+        "yelp_polarity": "textattack/bert-base-uncased-yelp-polarity"
     }[model]
 
 
@@ -161,6 +177,55 @@ def get_dataset(dataset: str, n_train: int, n_val: int = 100):
         d = d.rename_columns({"document": "x", "summary": "y"})
         d = d.add_column("simple_y", d["y"])
         return d[:n_train], d[n_train : n_train + n_val]
+
+    elif dataset in glue_datasets+ ["yelp_polarity"] or dataset.startswith(tuple([i+"_aug" for i in glue_datasets])):
+        if dataset in glue_datasets:
+            d = datasets.load_dataset("glue", dataset)
+        elif dataset.startswith(tuple([i+"_aug" for i in glue_datasets])):
+            d = datasets.load_dataset('csv', data_files={"train": "datasets/"+dataset+"_train.csv", "validation":  "datasets/"+dataset+"_val.csv"})
+        else:
+            d = datasets.load_dataset(dataset)
+        
+        # Among subsets of the validation set corresponding to each label, get size of subset with min size
+        n_val = min(list(Counter(d[list(d.keys())[1]]["label"]).values())) 
+
+        # Perform similar validation for n_train
+        n_train_check = min(list(Counter(d[list(d.keys())[0]]["label"]).values())) 
+        if n_train>n_train_check:
+            print("Reducing n_train to {} to ensure equal number of samples for each class in train set".format(n_train_check))
+            n_train = n_train_check
+
+        train = defaultdict(lambda: [None] * num_labels * n_train)
+        val = defaultdict(lambda: [None] * num_labels * n_val)
+
+        counts_train = defaultdict(int)
+        counts_val = defaultdict(int)
+        num_labels = is_classification(dataset)
+
+        x_feature_name = list(d["train"][0].keys())[0]
+        # if len(list(d["train"][0].keys()))>3:
+        #     raise ValueError("Number of features longer than expected!!")
+
+        x_train = [i[x_feature_name] for i in d["train"]]
+        y_train = [i["label"] for i in d["train"]]
+
+        x_val = [i[x_feature_name] for i in d[list(d.keys())[1]]]
+        y_val = [i["label"] for i in d[list(d.keys())[1]]]
+
+        for idx in range(len(y_train)):
+            c = counts_train[y_train[idx]]
+            if c < n_train:
+                train["x"][c * num_labels + y_train[idx]] = x_train[idx]
+                train["y"][c * num_labels + y_train[idx]] = y_train[idx]
+                counts_train[y_train[idx]] += 1
+        for idx in range(len(y_val)):
+            c = counts_val[y_val[idx]]
+            if c < n_val:
+                val["x"][c * num_labels + y_val[idx]] = x_val[idx]
+                val["y"][c * num_labels + y_val[idx]] = y_val[idx]
+                counts_val[y_val[idx]] += 1 
+        print(train["y"][:10], val["y"][:10])
+        return train, val
     else:
         raise NotImplementedError(f"{dataset}")
 
@@ -172,6 +237,12 @@ def metric_for_dataset(dataset: str):
         "trivia": "exact match",
         "babi": "exact match",
         "amazon": "classification accuracy",
+        "sst2": "classification accuracy",
+        "cola": "classification accuracy",
+        "mrpc": "classification accuracy",
+        "qnli": "classification accuracy",
+        "rte": "classification accuracy", 
+        "wnli": "classification accuracy"
     }.get(dataset, "exact match")
 
 
@@ -253,34 +324,70 @@ def fix_random_seeds(seed=123, set_system=True, set_torch=True):
         torch.manual_seed(seed)
 
 
+# def plot_ft(models, datasets, ks, modes, output_path: str):
+#     data = defaultdict(lambda: defaultdict(list))
+#     question = "ft"
+
+#     x_vals = set()
+#     for dataset in datasets:
+#         for model, mode in itertools.product(models, modes):
+#             for k in ks:
+#                 fn = "_".join([model, dataset, str(k), mode])
+#                 id_ = "_".join([model, dataset, mode])
+#                 with open(f"{RESULTS_DIR}/{question}/{fn}.json", "r") as f:
+#                     score = json.load(f)["metric"]
+#                     data[id_]["x"].append(k)
+#                     x_vals.add(k)
+#                     data[id_]["y"].append(score)
+
+#         for k, v in data.items():
+#             plt.plot(v["x"], v["y"], label=k)
+
+#     if max(x_vals) > 4:
+#         plt.xscale("symlog")
+#     ax = plt.gca()
+#     ax.xaxis.set_major_formatter(mticker.ScalarFormatter())
+#     ax.xaxis.set_ticks(sorted(x_vals))
+#     plt.legend()
+#     plt.title(" & ".join(datasets))
+#     plt.ylabel("/".join([metric_for_dataset(dataset) for dataset in datasets]))
+#     plt.xlabel("Number of support examples")
+#     # plt.show()
+#     plt.savefig(output_path, bbox_inches="tight")
+
+
 def plot_ft(models, datasets, ks, modes, output_path: str):
     data = defaultdict(lambda: defaultdict(list))
     question = "ft"
 
     x_vals = set()
+    k = ks[0]
+    model = models[0]
     for dataset in datasets:
-        for model, mode in itertools.product(models, modes):
-            for k in ks:
-                fn = "_".join([model, dataset, str(k), mode])
-                id_ = "_".join([model, dataset, mode])
-                with open(f"{RESULTS_DIR}/{question}/{fn}.json", "r") as f:
-                    score = json.load(f)["metric"]
-                    data[id_]["x"].append(k)
-                    x_vals.add(k)
-                    data[id_]["y"].append(score)
+        for mode in modes:
+            fn = "_".join([model, dataset, str(k), mode])
+            id_ = "_".join([model, dataset])
+            with open(f"{RESULTS_DIR}/{question}/{fn}.json", "r") as f:
+                score = json.load(f)["metric"]
+                if mode=="all":
+                    mode = "-1"
+                data[id_]["x"].append(int(mode))
+                x_vals.add(k)
+                data[id_]["y"].append(score)
+    
+    for k, v in data.items():
+        print(v["x"], v["y"], k)
+        plt.plot(v["x"], v["y"], label=k)
 
-        for k, v in data.items():
-            plt.plot(v["x"], v["y"], label=k)
-
-    if max(x_vals) > 4:
-        plt.xscale("symlog")
-    ax = plt.gca()
-    ax.xaxis.set_major_formatter(mticker.ScalarFormatter())
-    ax.xaxis.set_ticks(sorted(x_vals))
+    # if max(x_vals) > 4:
+    #     plt.xscale("symlog")
+    # ax = plt.gca()
+    # ax.xaxis.set_major_formatter(mticker.ScalarFormatter())
+    # ax.xaxis.set_ticks(sorted(x_vals))
     plt.legend()
-    plt.title(" & ".join(datasets))
-    plt.ylabel("/".join([metric_for_dataset(dataset) for dataset in datasets]))
-    plt.xlabel("Number of support examples")
+    plt.title("{} model fine-tuned on augmented datasets".format(model, dataset))
+    plt.ylabel("Classification Accuracy")
+    plt.xlabel("Fine-tuned layer number")
     # plt.show()
     plt.savefig(output_path, bbox_inches="tight")
 

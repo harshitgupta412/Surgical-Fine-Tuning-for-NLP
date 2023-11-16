@@ -1,0 +1,904 @@
+sentence,label,augmentation_type,orig_index
+neil warren earl burger here succeeded in making the mystery of four decades spine the springboard for a more immediate mystery in the present,1,synonym_replacement,0
+neil burger here succeeded in making the enigma of four decades back the springboard for a more immediate enigma in the salute,1,synonym_replacement,0
+neil burger here succeeded in making the mystery of four decades rearward the jumping off point for a more immediate mystery in the present,1,synonym_replacement,0
+it is a ocular rorschach test and i must have failed,0,synonym_replacement,1
+it is a ocular rorschach test and i must have failed,0,synonym_replacement,1
+it is a visual rorschach test and i mustiness have failed,0,synonym_replacement,1
+the only way to suffer this insipid brutally clueless film might be with a large dose of painkillers,0,synonym_replacement,2
+the only way to tolerate this insipid brutally clueless take might be with a large dose of painkillers,0,synonym_replacement,2
+the only way of life to tolerate this insipid brutally clueless film might be with a large dose of painkillers,0,synonym_replacement,2
+scores no points for originality wit or intelligence service,0,synonym_replacement,3
+lots no points for originality wit or intelligence,0,synonym_replacement,3
+scores no signal for originality wit or intelligence,0,synonym_replacement,3
+it would take a complete moron to foul up a screen adaptation of oscar wilde is hellenic satire,0,synonym_replacement,4
+it would take a complete moron to foul up a screen adaption of oscar wilde is classic satire,0,synonym_replacement,4
+it would take a complete idiot to foul up a screen adaptation of oscar wilde is classic satire,0,synonym_replacement,4
+pure cinematic intoxication a wildly inventive mixture of funniness and melodrama tastelessness and swooning elegance,1,synonym_replacement,5
+pure cinematic insobriety a wildly inventive mixture of comedy and melodrama tastelessness and swooning elegance,1,synonym_replacement,5
+pure cinematic intoxication a wildly inventive mixture of comedy and melodrama tastelessness and faint elegance,1,synonym_replacement,5
+it is not the initiatory time that director sara sugarman stoep to having characters drop their pants for laughs and not the last time she fails to provoke them,0,synonym_replacement,6
+it is not the first time that theatre director sara sugarman stoops to having characters drop their pants for laughs and not the net time she fails to provoke them,0,synonym_replacement,6
+it is not the first time that director sara sugarman stoops to having graphic symbol drop their knickers for laughs and not the last time she fails to provoke them,0,synonym_replacement,6
+just the labour affect in creating the layered rankness of the imagery in this chiaroscuro of madness and light is astonishing,1,synonym_replacement,7
+just the lying in involved in creating the layered richness of the imagery in this chiaroscuro of madness and lightheaded is astonishing,1,synonym_replacement,7
+just the drive involved in creating the layer richness of the imagery in this chiaroscuro of madness and light is astonishing,1,synonym_replacement,7
+matthew lillard is support to play shaggy,1,synonym_replacement,8
+st matthew lillard is born to play shaggy,1,synonym_replacement,8
+matthew lillard is born to play shagged,1,synonym_replacement,8
+it is blue,0,synonym_replacement,9
+it is sorry,0,synonym_replacement,9
+it is somber,0,synonym_replacement,9
+the picture has several strong performances,1,synonym_replacement,10
+the film has several strong functioning,1,synonym_replacement,10
+the motion picture show has several strong performances,1,synonym_replacement,10
+munch is screenplay is tenderly observant of his graphic symbol,1,synonym_replacement,11
+munch is screenplay is tenderly law abiding of his characters,1,synonym_replacement,11
+munch is screenplay is tenderly law abiding of his characters,1,synonym_replacement,11
+isabelle huppert excels as the puzzling mika and anna mouglalis is a stunning freshly young talent in one of chabrol is most intense psychological mysteries,1,synonym_replacement,12
+isabelle huppert excels as the enigmatic mika and anna mouglalis is a stupefy fresh young talent in one of chabrol is most intense psychological mysteries,1,synonym_replacement,12
+isabelle huppert excels as the puzzling mika and anna mouglalis is a stunning new thomas young talent in one of chabrol is most intense psychological mysteries,1,synonym_replacement,12
+a cruelly funny twist on teen comedy packed with inventive cinematic tricks and an ironically sea wolf soundtrack,1,synonym_replacement,13
+a cruelly funny whirl on teen comedy packed with inventive cinematic tricks and an ironically killer soundtrack,1,synonym_replacement,13
+a cruelly funny braid on teen comedy packed with inventive cinematic tricks and an ironically killer soundtrack,1,synonym_replacement,13
+predictably soulless techno applesauce,0,synonym_replacement,14
+predictably soulless techno trash,0,synonym_replacement,14
+predictably soulless techno folderol,0,synonym_replacement,14
+tsai has a well deserved reputation as unity of the cinema world is great visual stylists and in this picture show every shot enhances the excellent performances,1,synonym_replacement,15
+tsai has a good deserved reputation as one of the cinema world is great visual stylists and in this film every slam enhances the excellent performances,1,synonym_replacement,15
+tsai has a well deserved reputation as one of the movie theatre world is great visual hairdresser and in this film every shot enhances the excellent performances,1,synonym_replacement,15
+some like it hot on the hardwood proves once again that a mankind in pull is not in and of himself funny,0,synonym_replacement,16
+some alike it hot on the hardwood proves once again that a man in drag on is not in and of himself funny,0,synonym_replacement,16
+some like it hot on the hardwood prove once again that a man in drag is not in and of himself good story,0,synonym_replacement,16
+for a movie about the power of poetry and passion there is precious petty of either,0,synonym_replacement,17
+for a movie about the superpower of poetry and passion there is precious little of either,0,synonym_replacement,17
+for a movie about the power of verse and passion there is precious little of either,0,synonym_replacement,17
+diggs and lathan are among the chief reasons brown university sugar is such a sweet and sexy film,1,synonym_replacement,18
+diggs and lathan are among the chief reasons brown sugar is such a sweet and sexy cinema,1,synonym_replacement,18
+diggs and lathan are among the chief reasons brown sugar is such a sweet and sexy flick,1,synonym_replacement,18
+uneven but a lot of sport,1,synonym_replacement,19
+uneven but a lot of sport,1,synonym_replacement,19
+scratchy but a lot of fun,1,synonym_replacement,19
+when the cinema over i felt tired and drained and wanted to lie on my own deathbed for a while,0,synonym_replacement,20
+when the film terminate i felt weary and drained and wanted to lie on my own deathbed for a while,0,synonym_replacement,20
+when the picture ended i felt tired and drained and wanted to lie in on my own deathbed for a while,0,synonym_replacement,20
+contains the humor enactment poignancy and intelligence of a bad sitcom,0,synonym_replacement,21
+check the humor characterization poignancy and intelligence of a bad sitcom,0,synonym_replacement,21
+contains the humor characterization poignance and intelligence of a bad sitcom,0,synonym_replacement,21
+a pretentious and ultimately empty examination of a sick and evil cleaning woman,0,synonym_replacement,22
+a pretentious and ultimately empty examination of a regorge and evil woman,0,synonym_replacement,22
+a pretentious and ultimately empty interrogatory of a sick and evil woman,0,synonym_replacement,22
+i can easily suppose benigni is pinocchio becoming a christmas perennial,1,synonym_replacement,23
+i can easily reckon benigni is pinocchio becoming a christmas perennial,1,synonym_replacement,23
+i can easy imagine benigni is pinocchio becoming a christmas perennial,1,synonym_replacement,23
+generates an enormous feeling of empathy for its reference,1,synonym_replacement,24
+generates an enormous palpate of empathy for its characters,1,synonym_replacement,24
+generates an enormous feel of empathy for its characters,1,synonym_replacement,24
+reggio is continual visual barrage is absorbing as considerably as thought provoking,1,synonym_replacement,25
+reggio is continual visual barrage is absorbing as intimately as thought provoking,1,synonym_replacement,25
+reggio is continual visual barrage fire is absorbing as well as thought provoking,1,synonym_replacement,25
+propagate itself too thin leaving these actors as well as the members of the commune short of profound characterizations,0,synonym_replacement,26
+spreads itself too thin will these actors as well as the members of the commune short of profound characterizations,0,synonym_replacement,26
+spreads itself too thin leaving these actors as well as the members of the commune abruptly of profound characterizations,0,synonym_replacement,26
+once again director chris capital of ohio takes a hat in hand approach to rowling that stifles creative thinking and allows the film to drag on for nearly three hours,0,synonym_replacement,27
+once again conductor chris columbus takes a hat in hand approach to rowling that stifles creativity and allows the film to drag on for well nigh three hours,0,synonym_replacement,27
+once again director chris columbus takes a hat in bridge player approach to rowling that stifles creativity and allows the film to drag on for about three hours,0,synonym_replacement,27
+has all the hallmarks of a movie designed strictly for children is home video a market so insatiable it absorbs all manner of lame amusement as long as year old find it amusive,0,synonym_replacement,28
+has all the hallmarks of a movie designed strictly for children is home video a market so insatiable it engross all manner of lame entertainment as foresightful as year olds chance it diverting,0,synonym_replacement,28
+has all the trademark of a movie designed strictly for children is home video a market so insatiable it absorbs all manner of lame entertainment as long as yr olds find it divert,0,synonym_replacement,28
+a giant of a good time for both children and parents seeking christian themed fun,1,synonym_replacement,29
+a whale of a good time for both youngster and parents seeking christian themed fun,1,synonym_replacement,29
+a whale of a good time for both child and parents seeking christian themed fun,1,synonym_replacement,29
+there are plot holes big adequate for shamu the killer whale to swim through,0,synonym_replacement,30
+there are plot holes big enough for shamu the killer heavyweight to swim through,0,synonym_replacement,30
+there are plot muddle big enough for shamu the killer whale to swim through,0,synonym_replacement,30
+director andrew niccol demonstrates a wry understanding of the quirks of renown,1,synonym_replacement,31
+director andrew niccol demo a wry understanding of the quirks of fame,1,synonym_replacement,31
+director andrew niccol demonstrates a ironic understanding of the quirks of fame,1,synonym_replacement,31
+a must for fans of british cinema if only because so many titans of the industriousness are along for the drive,1,synonym_replacement,32
+a must for devotee of british cinema if only because so many titan of the industry are along for the ride,1,synonym_replacement,32
+a must for fans of british movie house if only because so many colossus of the industry are along for the ride,1,synonym_replacement,32
+though clearly well intentioned this cross cultural soap opera house is painfully formulaic and stilted,0,synonym_replacement,33
+though clear well intentioned this cross cultural soap opera is painfully formulaic and stilted,0,synonym_replacement,33
+though clearly well intentioned this grumpy cultural soap opera is painfully formulaic and stilted,0,synonym_replacement,33
+that is because comparatively nothing happens,0,synonym_replacement,34
+that is because relatively zilch happens,0,synonym_replacement,34
+that is because comparatively nothing happens,0,synonym_replacement,34
+novak contemplates a heartland so overwhelmed by its lack of purpose that it look for excitement in manufactured high drama,0,synonym_replacement,35
+novak contemplates a heartland so overwhelmed by its lack of function that it seeks excitement in manufactured high drama,0,synonym_replacement,35
+novak contemplates a heartland so overwhelmed by its miss of purpose that it seeks excitement in manufactured high drama,0,synonym_replacement,35
+utter treacle conceited pap,0,synonym_replacement,36
+utter mush self conceited pap,0,synonym_replacement,36
+utter glop conceited pap,0,synonym_replacement,36
+cassavetes thinks he is form dog day good afternoon with a cause but all he is done is to reduce everything he touches to a shrill didactic cartoon,0,synonym_replacement,37
+cassavetes thinks he is making dog day afternoon with a cause but all he is done is to reduce everything he touches to a shrill didactical animated cartoon,0,synonym_replacement,37
+cassavetes thinks he is realise dog day afternoon with a stimulate but all he is done is to reduce everything he touches to a shrill didactic cartoon,0,synonym_replacement,37
+disjointed pasquinade,0,synonym_replacement,38
+disjointed lampoon,0,synonym_replacement,38
+disjointed sendup,0,synonym_replacement,38
+in fact it is quite fun in blank space,1,synonym_replacement,39
+in fact it is quite playfulness in places,1,synonym_replacement,39
+in fact it is quite fun in place,1,synonym_replacement,39
+it can not be revel even on the level that matchless enjoys a bad slasher flick primarily because it is dull,0,synonym_replacement,40
+it can not be enjoyed eventide on the story that one enjoys a bad slasher flick primarily because it is dull,0,synonym_replacement,40
+it can not be enjoyed even on the even that one savor a bad slasher flick primarily because it is dull,0,synonym_replacement,40
+it is always disappointing when a documentary fails to lively up to or extend any new insight into its chosen topic,0,synonym_replacement,41
+it is always disappointing when a documentary fails to subsist up to or put up any new insight into its chosen topic,0,synonym_replacement,41
+it is always disappointing when a documental fails to live up to or offer any fresh insight into its chosen topic,0,synonym_replacement,41
+in the era of the sopranos it feels painfully tautological and inauthentic,0,synonym_replacement,42
+in the era of the sopranos it feels sorely redundant and inauthentic,0,synonym_replacement,42
+in the geological era of the sopranos it feels painfully redundant and inauthentic,0,synonym_replacement,42
+a hypnotic cyber hymn and a cruel story of youth finish,1,synonym_replacement,43
+a hypnotic cyber hymn and a cruel write up of youth culture,1,synonym_replacement,43
+a hypnotic cyber anthem and a cruel story of youth culture,1,synonym_replacement,43
+much of the cast is squiffy or just plain bad,0,synonym_replacement,44
+much of the cast is sozzled or just plain bad,0,synonym_replacement,44
+much of the cast is stiff or just unembellished bad,0,synonym_replacement,44
+i ve yet to find an literal vietnam war combat movie actually produced by either the north or s vietnamese but at to the lowest degree now we ve got something pretty damn close,1,synonym_replacement,45
+i ve yet to find an factual vietnam war combat movie in reality produced by either the north or south annamite but at least now we ve got something pretty damn close,1,synonym_replacement,45
+i ve yet to find an actual vietnam state of war combat movie actually produced by either the north or south vietnamese but at to the lowest degree now we ve sire something pretty damn close,1,synonym_replacement,45
+a bizarre piece of work with premise and dialogue at the level of kids television and plot threads as moody as teen pregnancy rapine and suspected murder,0,synonym_replacement,46
+a bizarre patch of work with premise and dialogue at the level of kids television and plot threads as moody as teen pregnancy rape and suspected murder,0,synonym_replacement,46
+a flaky piece of work with premise and dialogue at the level of kids television and plot threads as glowering as teen pregnancy rape and suspected murder,0,synonym_replacement,46
+a documentary to make the stones weep as black as it is scary,0,synonym_replacement,47
+a docudrama to make the stones weep as shameful as it is scary,0,synonym_replacement,47
+a documentary to make the stones cry as shameful as it is scary,0,synonym_replacement,47
+there is got to be a more graceful mode of portraying the devastation of this disease,0,synonym_replacement,48
+there is got to be a more elegant way of portraying the devastation of this disease,0,synonym_replacement,48
+there is got to be a more graceful means of portraying the devastation of this disease,0,synonym_replacement,48
+and your reward will be a thoughtful emotional flick experience,1,synonym_replacement,49
+and your reward will be a thoughtful emotional moving picture show experience,1,synonym_replacement,49
+and your reward will be a thoughtful excited movie experience,1,synonym_replacement,49
+brash intelligent and erotically perplexing haneke is portrait of an upper separate austrian society and the suppression of its tucked aside demons is uniquely felt with a sardonic jolt,1,synonym_replacement,50
+brash intelligent and erotically perplexing haneke is portrait of an upper class austrian fellowship and the suppression of its tucked away demons is unambiguously felt with a sardonic jolt,1,synonym_replacement,50
+brash levelheaded and erotically perplexing haneke is portraiture of an upper class austrian society and the suppression of its tucked away demons is uniquely felt with a sardonic jolt,1,synonym_replacement,50
+it forces you to watch mass doing unpleasant things to each other and themselves and it maintains a cool length from its material that is deliberately unsettling,0,synonym_replacement,51
+it forces you to watch the great unwashed doing unpleasant things to each other and themselves and it maintains a cool distance from its material that is deliberately enervate,0,synonym_replacement,51
+it forces you to watch people doing unpleasant things to each other and themselves and it maintains a assuredness aloofness from its material that is deliberately unsettling,0,synonym_replacement,51
+it is the element of condescension as the filmmakers look down on their wreak class subjects from their gallant perch that finally makes sex with strangers which open up today in the new york metropolitan area so distasteful,0,synonym_replacement,52
+it is the element of condescension as the filmmakers look down on their working class subjects from their lofty roost that finally makes sex with strangers which opens today in the unexampled york metropolitan area so wicked,0,synonym_replacement,52
+it is the element of condescension as the filmmakers look down on their working class subjects from their lofty perch that finally take in sexual urge with strangers which opens today in the new york metropolitan sphere so distasteful,0,synonym_replacement,52
+nil short of a masterpiece and a challenging one,1,synonym_replacement,53
+nothing short of a masterpiece and a challenging ace,1,synonym_replacement,53
+nothing short of a masterpiece and a intriguing one,1,synonym_replacement,53
+i just saw this movie well it is credibly not accurate to call it a movie,0,synonym_replacement,54
+i just saw this movie well it is probably not precise to call it a movie,0,synonym_replacement,54
+i just saw this movie well it is belike not accurate to call it a movie,0,synonym_replacement,54
+a muted junky out,0,synonym_replacement,55
+a muted monster out,0,synonym_replacement,55
+a muted junkie out,0,synonym_replacement,55
+there is an underlying old world sexism to monday break of the day that undercuts its charm,0,synonym_replacement,56
+there is an underlying old creation sexism to monday morning that undercuts its charm,0,synonym_replacement,56
+there is an underlying sometime world sexism to monday morning that undercuts its charm,0,synonym_replacement,56
+taken as a whole the dinner jacket does nt add up to a whole lot,0,synonym_replacement,57
+demand as a whole the tuxedo does nt add up to a whole lot,0,synonym_replacement,57
+taken as a whole the black tie does nt add up to a whole lot,0,synonym_replacement,57
+though the picture show is static its author director is heart is in the right place his plea for democracy and civic action laudable,1,synonym_replacement,58
+though the film is static its writer director is heart is in the rectify place his plea for majority rule and civic action laudable,1,synonym_replacement,58
+though the film is static its author director is heart is in the right place his plea for majority rule and civic action laudable,1,synonym_replacement,58
+with mcconaughey in an totally irony free partition and bale reduced mainly to batting his sensitive eyelids there is not enough intelligence wit or innovation on the crt screen to attract and sustain an older crowd,0,synonym_replacement,59
+with mcconaughey in an entirely irony free zone and bale trim down mainly to batting his sensitive eyelids there is not sufficiency intelligence wit or innovation on the screen to attract and sustain an older crowd together,0,synonym_replacement,59
+with mcconaughey in an entirely irony free zone and bale reduced mainly to batting his tender eyelid there is not enough intelligence wit or innovation on the screen to attract and sustain an older gang,0,synonym_replacement,59
+skin of man gets a few cheap daze from its kids in peril theatrics but it also taps into the primal fears of young people trying to make do with the orphic and brutal nature of adults,1,synonym_replacement,60
+skin of man gets a few cheesy shocks from its kids in peril theatrics but it too taps into the primal fears of young people trying to contend with the mysterious and brutal nature of adults,1,synonym_replacement,60
+skin of man gets a few tatty shocks from its kids in peril theatrics but it also taps into the primal veneration of young people trying to cope with the mysterious and brutal nature of adult,1,synonym_replacement,60
+what it want in substance it makes up for in heart,1,synonym_replacement,61
+what it want in substance it makes up for in heart,1,synonym_replacement,61
+what it lacks in nitty gritty it makes up for in heart,1,synonym_replacement,61
+like all great films about a life you neer knew existed it offers a great deal to absorb and even more to think about after the final frame,1,synonym_replacement,62
+like all great films about a life you never knew existed it offers a lot to absorb and even more to think about after the final couch,1,synonym_replacement,62
+like all great films about a life you never knew existed it offers practically to absorb and even more to think about after the final frame of reference,1,synonym_replacement,62
+an average vitamin b complex movie with no aspirations to be anything more,0,synonym_replacement,63
+an average b motion picture show with no aspirations to be anything more,0,synonym_replacement,63
+an average b movie with no aspiration to be anything more,0,synonym_replacement,63
+standard guns versus martial arts cliche with little new lend,1,synonym_replacement,64
+standard hired gun versus martial arts cliche with little new added,1,synonym_replacement,64
+standard guns versus martial fine art cliche with little new added,1,synonym_replacement,64
+a beautifully joyride action thriller about love and terrorism in korea,1,synonym_replacement,65
+a beautifully tooled action thriller about love and act of terrorism in korea,1,synonym_replacement,65
+a beautifully tooled action thriller about make love and terrorism in korea,1,synonym_replacement,65
+starts out with tremendous promise introducing an intriguing and alluring premise only to fall prey to a carload of screenwriting cliches that sink it faster than a talebearing freighter,0,synonym_replacement,66
+scratch line out with fantastic promise introducing an intriguing and alluring premise only to fall prey to a boatload of screenwriting cliches that sink it faster than a leaky freighter,0,synonym_replacement,66
+starts out with tremendous promise introducing an intriguing and alluring preface only to fall prey to a boatload of screenwriting cliches that sink it faster than a leaky bottom,0,synonym_replacement,66
+hard core slasher aficionados will find things to wish but overall the halloween series has lost its edge,0,synonym_replacement,67
+hard core slasher aficionado will find things to like but overall the halloween series has lost its edge,0,synonym_replacement,67
+hard core slasher aficionado will find things to like but overall the halloween series has lost its edge,0,synonym_replacement,67
+a college narration that works even without vulgarity sex scenes and cussing,1,synonym_replacement,68
+a college story that works even without vulgarity sex scenery and cussing,1,synonym_replacement,68
+a college story that operate even without vulgarity sex scenes and cussing,1,synonym_replacement,68
+insufferably unenlightened,0,synonym_replacement,69
+insufferably uninstructed,0,synonym_replacement,69
+insufferably naif,0,synonym_replacement,69
+it is a strength of a objective to disregard available bias especially as temptingly easy as it would have been with this introduce,1,synonym_replacement,70
+it is a military strength of a documentary to disregard available bias especially as temptingly easy as it would have been with this preface,1,synonym_replacement,70
+it is a strength of a documentary to disregard available bias specially as seductively easy as it would have been with this premise,1,synonym_replacement,70
+those with a modicum of patience will find in these characters foibles a dateless and unique perspective,1,synonym_replacement,71
+those with a modicum of patience will find in these characters foibles a timeless and unique linear perspective,1,synonym_replacement,71
+those with a modicum of patience will observe in these characters foibles a timeless and unique perspective,1,synonym_replacement,71
+its and pieces of the hot chick are so hilarious and schneider is operation is so fine it is a real ignominy that so much of the film again as in the animal is a slapdash mess,0,synonym_replacement,72
+its and pieces of the spicy chick are so hilarious and schneider is performance is so fine it is a material shame that so much of the movie again as in the animal is a slapdash great deal,0,synonym_replacement,72
+its and pieces of the hot doll are so hilarious and schneider is performance is so delicately it is a real ignominy that so much of the movie again as in the animal is a slapdash mess,0,synonym_replacement,72
+there are some moving picture show that hit you from the first scene and you know it is extend to be a trip,1,synonym_replacement,73
+there are some movie that hit you from the first tantrum and you know it is going to be a trip,1,synonym_replacement,73
+there are some movies that hit you from the first scene and you know it is cash in ones chips to be a touch off,1,synonym_replacement,73
+it proves quite oblige as an intense brooding character study,1,synonym_replacement,74
+it examine quite compelling as an intense brooding character study,1,synonym_replacement,74
+it proves quite compelling as an intense musing character study,1,synonym_replacement,74
+a loud ugly irritating film without any of its satirical salvos hitting a discernible target,0,synonym_replacement,75
+a loud ugly nark movie without any of its satirical salvos hitting a discernible target,0,synonym_replacement,75
+a loud wretched irritating movie without any of its satirical salvos hitting a discernible target,0,synonym_replacement,75
+you can taste it but there is no foam,0,synonym_replacement,76
+you can taste it but there is no sparkle,0,synonym_replacement,76
+you can taste it but there is no sparkle,0,synonym_replacement,76
+the quality of the art combined with the humor and word of the script leave the filmmakers to demonstrate the biblical message of forgiveness without it ever becoming preachy or syrupy,1,synonym_replacement,77
+the quality of the art combined with the sense of humour and intelligence of the script allow the filmmakers to present the scriptural content of forgiveness without it ever becoming preachy or syrupy,1,synonym_replacement,77
+the choice of the art combined with the humor and intelligence of the script permit the filmmakers to present the biblical subject matter of forgiveness without it ever becoming preachy or syrupy,1,synonym_replacement,77
+the cristal potion gives the quickly named prime bubbles and buttercup supernatural powers that include extraordinary strength and laser beam eyes which unfortunately do national trust enable them to discern flimsy screenplays,0,synonym_replacement,78
+the x potion gives the quickly named blossom bubbles and buttercup supernatural powers that include extraordinary military posture and laser beam eyes which unfortunately do national trust enable them to recognize flimsy screenplays,0,synonym_replacement,78
+the x potion gives the quickly named blossom bubbles and kingcup supernatural powers that include extraordinary strength and laser beam eyes which unfortunately do national trust enable them to recognise flimsy screenplays,0,synonym_replacement,78
+rifkin is references are faultless throughout,1,synonym_replacement,79
+rifkin is cite are impeccable throughout,1,synonym_replacement,79
+rifkin is references are impeccable end to end,1,synonym_replacement,79
+too unsound none of it is funny,0,synonym_replacement,80
+too high risk none of it is funny,0,synonym_replacement,80
+too tough none of it is funny,0,synonym_replacement,80
+a joyously grungy hilariously wicked black comedy,1,synonym_replacement,81
+a gleefully grungy hilariously wicked black drollery,1,synonym_replacement,81
+a gleefully grungy uproariously wicked black comedy,1,synonym_replacement,81
+you leave the same way you came a few tasty morsels under your belt but no raw friends,0,synonym_replacement,82
+you leave the same way you came a few tasty morsels under your belt but no modern friends,0,synonym_replacement,82
+you leave the same way you came a few tasty morsels under your belt but no newfangled friends,0,synonym_replacement,82
+though it course minutes safe conduct is anything but languorous,1,synonym_replacement,83
+though it runs minutes safe conduct is anything but lackadaisical,1,synonym_replacement,83
+though it range minutes safe conduct is anything but languorous,1,synonym_replacement,83
+it is both degrading and strangely liberating to pick up multitude working so hard at preeminent lives of sexy intrigue only to be revealed by the dispassionate gantz brothers as ordinary pasty lumpen,1,synonym_replacement,84
+it is both degrading and strangely liberating to interpret people working so hard at direct lives of sexy intrigue only to be revealed by the dispassionate gantz brothers as average pasty lumpen,1,synonym_replacement,84
+it is both put down and strangely liberating to see people go so hard at leading lives of sexy intrigue only to be revealed by the cold eyed gantz brothers as ordinary pasty lumpen,1,synonym_replacement,84
+they crush each other under cars throw each other out windows electrocute and dismember their victims in full cognizance,0,synonym_replacement,85
+they crush each other under cars bedevil each other out windows electrocute and dismember their victims in full consciousness,0,synonym_replacement,85
+they crush each other under cars throw each other out windows fry and dismember their victims in full consciousness,0,synonym_replacement,85
+in any case i would recommend big bad love only to winger devotee who have escape her since is forget paris,0,synonym_replacement,86
+in any case i would recommend big badness love only to winger fans who have missed her since is forget capital of france,0,synonym_replacement,86
+in any case i would recommend big bad bed only to winger fans who have missed her since is draw a blank paris,0,synonym_replacement,86
+as surreal as a dreaming and as detailed as a photograph as visually dextrous as it is at times imaginatively overwhelming,1,synonym_replacement,87
+as surrealistic as a dream and as detailed as a photograph as visually dexterous as it is at times imaginatively whelm,1,synonym_replacement,87
+as surreal as a stargaze and as elaborate as a photograph as visually dexterous as it is at times imaginatively overwhelming,1,synonym_replacement,87
+evening if you do nt know the band or the album is songs by heart you will enjoy seeing how both develop and you will as well learn a good deal about the say of the music business in the st century,1,synonym_replacement,88
+fifty fifty if you do nt know the band or the record album is songs by heart you will enjoy seeing how both germinate and you will also learn a good deal about the submit of the music business in the st century,1,synonym_replacement,88
+even if you do national trust know the band or the album is songs by gist you will enjoy seeing how both evolve and you will besides learn a good deal about the state of the music business in the st ,1,synonym_replacement,88
+with an unflappable ventilate of decadent urbanity everett remains a perfect wildean actor and a relaxed firth displays impeccable comic science,1,synonym_replacement,89
+with an unflappable air of decadent urbanity everett remains a perfect wildean doer and a relaxed john rupert firth displays impeccable comic skill,1,synonym_replacement,89
+with an unflappable air of decadent urbanity everett remains a perfect wildean actor and a relaxed firth display impeccable laughable skill,1,synonym_replacement,89
+unpretentious charming offbeat original,1,synonym_replacement,90
+unpretentious trance quirky original,1,synonym_replacement,90
+unpretentious charming quirky pilot,1,synonym_replacement,90
+a processed comedy chop shot suey,0,synonym_replacement,91
+a work comedy chop suey,0,synonym_replacement,91
+a processed comedy chopper suey,0,synonym_replacement,91
+a continuation that is much too big for its britches,0,synonym_replacement,92
+a subsequence that is much too big for its britches,0,synonym_replacement,92
+a sequel that is much too cock a hoop for its britches,0,synonym_replacement,92
+a complete scourge of time,0,synonym_replacement,93
+a accomplished waste of time,0,synonym_replacement,93
+a complete scourge of time,0,synonym_replacement,93
+a well intentioned effort that is inactive too burdened by the role player is offbeat sensibilities for the earnest emotional core to emerge with any degree of accessibility,0,synonym_replacement,94
+a well intentioned exertion that is still too burdened by the actor is offbeat sensibilities for the earnest aroused core to emerge with any degree of accessibility,0,synonym_replacement,94
+a well intentioned effort that is noneffervescent too burdened by the actor is offbeat sensibilities for the earnest emotional core to emerge with any stage of accessibility,0,synonym_replacement,94
+assayas challenging sometimes beautiful adaptation of jacques chardonne is novel,1,synonym_replacement,95
+assayas ambitious sometimes beautiful adaption of jacques chardonne is novel,1,synonym_replacement,95
+assayas ambitious sometimes beautiful adaptation of jacques chardonne is fresh,1,synonym_replacement,95
+contempt the fact that this film was nt as bad as i thought it was going to be it is nevertheless not a good movie,0,synonym_replacement,96
+scorn the fact that this film was nt as bad as i thought it was going to be it is still not a good picture show,0,synonym_replacement,96
+despite the fact that this film was nt as badness as i recall it was going to be it is still not a good movie,0,synonym_replacement,96
+guys say mean thing and shoot a lot of bullets,0,synonym_replacement,97
+guys say mean things and shoot a heap of bullets,0,synonym_replacement,97
+guys say stand for things and shoot a lot of bullets,0,synonym_replacement,97
+a manipulative feminist empowerment tale thinly posing as a sober drama about spousal abuse,0,synonym_replacement,98
+a manipulative libber empowerment tale thinly posing as a serious drama about spousal abuse,0,synonym_replacement,98
+a manipulative libber empowerment tale thinly posing as a serious drama about spousal abuse,0,synonym_replacement,98
+this moving picture is so bad that it is almost worth seeing because it is so bad,0,synonym_replacement,99
+this movie is so bad that it is well nigh worth seeing because it is so bad,0,synonym_replacement,99
+this movie is so bad that it is almost deserving seeing because it is so bad,0,synonym_replacement,99
+with a romantic comedy plotline straight from the ages this cinderella story does nt have a i surprise up its arm,0,synonym_replacement,100
+with a romantic clowning plotline directly from the ages this cinderella story does nt have a single surprise up its sleeve,0,synonym_replacement,100
+with a romantic comedy plotline straight from the ages this cinderella story does nt have a single surprisal up its arm,0,synonym_replacement,100
+and more than that it is an observant unfussily poetic speculation about identity and alienation,1,synonym_replacement,101
+and more than that it is an observant unfussily poetic meditation about identity operator and alienation,1,synonym_replacement,101
+and more than that it is an observant unfussily poetic meditation about identity and disaffection,1,synonym_replacement,101
+but it could have been high risk,0,synonym_replacement,102
+but it could have been tough,0,synonym_replacement,102
+but it could have been risky,0,synonym_replacement,102
+most viewers will wish there had been more of the king and less of the damned,0,synonym_replacement,103
+most viewers will wish there had been more of the fag and less of the damned,0,synonym_replacement,103
+most viewers will wish there had been more of the queen and less of the anathemise,0,synonym_replacement,103
+a skill fiction pastiche so lack in originality that if you stripped away its inspirations there would be precious little left,0,synonym_replacement,104
+a skill fiction pastiche so lacking in originality that if you stripped away its inspirations there would be preciously little left,0,synonym_replacement,104
+a scientific discipline fiction pastiche so lacking in originality that if you stripped by its inspirations there would be precious little left,0,synonym_replacement,104
+the pleasures that it does open may be enough to keep many moviegoers occupied amidst some of the more serious minded concerns of other year terminal movies,1,synonym_replacement,105
+the pleasure that it does open may be enough to keep many moviegoers occupied amidst some of the more serious minded concerns of other year end movies,1,synonym_replacement,105
+the pleasures that it does afford may be enough to keep many moviegoer occupied amidst some of the more serious minded care of other year end movies,1,synonym_replacement,105
+as plain and walker as catsup,0,synonym_replacement,106
+as plain and prosy as catsup,0,synonym_replacement,106
+as manifest and pedestrian as catsup,0,synonym_replacement,106
+every conceivable mistake a director could make in cinematography opera has been perpetrated here,0,synonym_replacement,107
+every conceivable mistake a director could make in motion picture photography opera has been perpetrated here,0,synonym_replacement,107
+every imaginable mistake a director could make in filming opera has been perpetrated here,0,synonym_replacement,107
+more concerned with overall feelings broader musical theme and open ended questions than concrete story and definitive answers soderbergh is solaris is a gorgeous and deceptively minimalist cinematic look poem,1,synonym_replacement,108
+more refer with overall feelings broader estimate and open ended questions than concrete story and definitive answers soderbergh is solaris is a gorgeous and deceptively minimalist cinematic tone poem,1,synonym_replacement,108
+more interested with overall feelings broader ideas and open ended questions than concrete story and definitive answers soderbergh is solaris is a gorgeous and deceptively minimalist cinematic tone verse form,1,synonym_replacement,108
+no cute element here not that i mind ugly the problem is he has no character loveable or otherwise,0,synonym_replacement,109
+no cute factor here not that i mind ugly the problem is he has no character loveable or differently,0,synonym_replacement,109
+no cute factor here not that i mind ugly the trouble is he has no character loveable or otherwise,0,synonym_replacement,109
+filmmaker stacy peralta has a flashy editing style that does nt always jell with sean penn is monotone narration but he prize the material without sentimentalise it,1,synonym_replacement,110
+filmmaker stacy peralta has a gaudy editing style that does nt always congeal with sean penn is monotone narration but he respects the material without sentimentalizing it,1,synonym_replacement,110
+filmmaker stacy peralta has a flashy editing dash that does national trust always jell with sean penn is monotone narration but he respects the material without sentimentalizing it,1,synonym_replacement,110
+you do nt need to be a pelvic girdle hop fan to appreciate scratch and that is the mark of a objective that works,1,synonym_replacement,111
+you do nt need to be a hip hop fan to prize scrub and that is the mark of a documentary that works,1,synonym_replacement,111
+you do nt need to be a rosehip hop rooter to appreciate scratch and that is the mark of a documentary that works,1,synonym_replacement,111
+i was trying to decide what get to me most about god is keen i m not and then i realized that i just did nt care,0,synonym_replacement,112
+i was trying to decide what vex me most about god is great i m not and then i realized that i just did national trust care,0,synonym_replacement,112
+i was nerve wracking to decide what annoyed me most about god is great i m not and then i realized that i just did nt deal,0,synonym_replacement,112
+metaphors abound but it is easy to exact this plastic film at face value and enjoy its slightly humorous and tender story,1,synonym_replacement,113
+metaphors abound but it is easy to take this flick at face value and enjoy its slightly humorous and tender narration,1,synonym_replacement,113
+metaphors abound but it is loose to take this film at face value and enjoy its slightly humorous and tender fib,1,synonym_replacement,113
+a comedy that swings and jostles to the rhythm method of life,1,synonym_replacement,114
+a comedy that swings and jostles to the rhythms of aliveness,1,synonym_replacement,114
+a funniness that swings and jostles to the rhythms of life,1,synonym_replacement,114
+if you re looking to rekindle the magic of the first moving picture you ll need a stronger support than us,0,synonym_replacement,115
+if you re looking to rekindle the magic of the first base celluloid you ll need a stronger stomach than us,0,synonym_replacement,115
+if you atomic number looking to rekindle the magic of the first film you ll need a inviolable stomach than us,0,synonym_replacement,115
+a modestly made but deeply moving documentary,1,synonym_replacement,116
+a modestly made but profoundly propel documentary,1,synonym_replacement,116
+a modestly throw but profoundly moving documentary,1,synonym_replacement,116
+pc stability notwithstanding the film suffers from a simplistic narrative and a pat fairy story conclusion,0,synonym_replacement,117
+pc stability notwithstanding the film suffers from a simplistic narrative and a pat fairy tale stopping point,0,synonym_replacement,117
+pc stability notwithstanding the film suffers from a simplistic narrative and a pat fairy tale determination,0,synonym_replacement,117
+has about th the fun of its spry predecessor but it is a rushed slapdash subsequence for the sake of a subsequence with to a lesser extent than half the secret plan and ingenuity,0,synonym_replacement,118
+has about th the fun of its agile predecessor but it is a rushed slapdash continuation for the sake of a continuation with less than half the plot and ingeniousness,0,synonym_replacement,118
+has about atomic number the fun of its spry precursor but it is a rushed slapdash sequel for the sake of a sequel with less than half the plot and inventiveness,0,synonym_replacement,118
+remarkable for its word and intensity,1,synonym_replacement,119
+noteworthy for its intelligence and intensity,1,synonym_replacement,119
+remarkable for its intelligence and chroma,1,synonym_replacement,119
+i do nt have it off if frailty will turn bill paxton into an a list director but he can rest contentedly with the noesis that he is made at least peerless damn fine horror movie,1,synonym_replacement,120
+i do nt know if frailty will become bill paxton into an a list director but he can rest contentedly with the knowledge that he is take in at least one damn fine repulsion movie,1,synonym_replacement,120
+i do nt know if frailty will turn bill paxton into an a inclination director but he can rest contentedly with the knowledge that he is made at least one blasted fine horror moving picture,1,synonym_replacement,120
+one of the year is most weirdly engaging and irregular character pieces,1,synonym_replacement,121
+one of the year is most weirdly engaging and unpredictable character set up,1,synonym_replacement,121
+one of the twelvemonth is most weirdly engaging and unpredictable character pieces,1,synonym_replacement,121
+shot like a postcard and overacted with all the boozy ego indulgence that land out the worst in otherwise talented actors,0,synonym_replacement,122
+shot like a postcard and overacted with all the boozy self indulgence that brings out the whip in other than talented actors,0,synonym_replacement,122
+shot like a postal card and overacted with all the boozy self indulgence that brings out the bad in otherwise talented actors,0,synonym_replacement,122
+barney is ideas about creation and identity do nt really seem all that profound at to the lowest degree by way of what can be gleaned from this three hour endurance test built around an hour is charles frederick worth of actual cloth,0,synonym_replacement,123
+barney is ideas about creation and identity element do nt really seem all that profound at to the lowest degree by way of what can be gleaned from this three hour endurance test built approximately an hour is worth of actual material,0,synonym_replacement,123
+barney is ideas about creation and personal identity do nt really seem all that profound at least by way of what can be gleaned from this three hour endurance trial built around an hour is worth of literal material,0,synonym_replacement,123
+delia greta and paula flagrant as three of the most multilayered and sympathetic female characters of the year,1,synonym_replacement,124
+delia greta and paula rank as three of the most multilayered and sympathetic female characters of the twelvemonth,1,synonym_replacement,124
+delia greta and paula rank as three of the most multilayered and harmonic female characters of the year,1,synonym_replacement,124
+enough is not a bad movie just average,0,synonym_replacement,125
+enough is not a spoilt movie just mediocre,0,synonym_replacement,125
+enough is not a bad movie just middling,0,synonym_replacement,125
+but the filming is cloudy the picture making becalmed,0,synonym_replacement,126
+but the filming is cloudy the picture making becalmed,0,synonym_replacement,126
+but the cinematography is mirky the picture making becalmed,0,synonym_replacement,126
+a terrible adaptation of a play that only ever walk the delicate tightrope between farcical and loathsome,0,synonym_replacement,127
+a terrible adaptation of a play that only ever walked the delicate tightrope between ludicrous and loathsome,0,synonym_replacement,127
+a terrible adaption of a play that only ever walked the delicate tightrope between farcical and loathsome,0,synonym_replacement,127
+slap me i saw this picture,0,synonym_replacement,128
+slap me i saw this film,0,synonym_replacement,128
+slapdash me i saw this movie,0,synonym_replacement,128
+for those of an indulgent slightly sunbaked and summery mind sex and lucia crataegus laevigata well prove diverting enough,1,synonym_replacement,129
+for those of an indulgent slightly sunbaked and summery mind sex and lucia may well prove diverting adequate,1,synonym_replacement,129
+for those of an indulgent slightly sunbaked and summery mind excite and lucia may well prove diverting enough,1,synonym_replacement,129
+reign of fire never comes close to recovering from its mad premise but it does nurture an enjoyable level of ridiculousness,0,synonym_replacement,130
+reign of burn never comes close to recovering from its demented premise but it does sustain an gratifying level of ridiculousness,0,synonym_replacement,130
+reign of fire never descend close to recovering from its demented premise but it does sustain an enjoyable level of absurdity,0,synonym_replacement,130
+the movie ends with outtake in which most of the grapheme forget their lines and just utter uhhh which is better than most of the writing in the movie,0,synonym_replacement,131
+the movie ends with outtakes in which most of the characters forget their lines and just double dyed uhhh which is better than most of the publish in the movie,0,synonym_replacement,131
+the moving picture show ends with outtakes in which most of the characters forget their lines and just double dyed uhhh which is better than most of the writing in the moving picture show,0,synonym_replacement,131
+try as you might to refuse if you ve got a place in your heart for smokey robinson this movie will worm its room there,1,synonym_replacement,132
+prove as you might to resist if you ve got a place in your affectionateness for smokey robinson this movie will worm its way there,1,synonym_replacement,132
+try as you might to resist if you ve got a place in your spirit for smokey robinson this movie will louse its way there,1,synonym_replacement,132
+low rent from framing one,0,synonym_replacement,133
+abject rent from frame one,0,synonym_replacement,133
+downcast rent from frame one,0,synonym_replacement,133
+we know the diagram is a little crazy but it held my interest from start to finish,1,synonym_replacement,134
+we know the plot is a picayune crazy but it held my interest from start to finish,1,synonym_replacement,134
+we know the plot is a little crazy but it declare my interest from start to finish,1,synonym_replacement,134
+dull a road tripper movie that is surprisingly short of both adventure and song,0,synonym_replacement,135
+wearisome a road trip movie that is surprisingly short of both adventure and song,0,synonym_replacement,135
+dull a road trip movie that is surprisingly little of both adventure and song,0,synonym_replacement,135
+the colorful masseur waste matter its time on mood rather than devolve on with the inherent absurdity of ganesh is rise up the social ladder,0,synonym_replacement,136
+the colorful masseur wastes its clip on mode rather than riding with the inherent absurdity of ganesh is rise up the social ladder,0,synonym_replacement,136
+the colorful masseur wastes its time on mood rather than twit with the inherent absurdity of ganesh is climb up up the social ladder,0,synonym_replacement,136
+it sends you away a worshiper again and quite cheered at just that,1,synonym_replacement,137
+it sends you away a believer again and quite a cheered at just that,1,synonym_replacement,137
+it sends you away a worshiper again and quite cheered at just that,1,synonym_replacement,137
+we ve seen it all before in one phase or another but director dustin hoffman with great help from kevin kline makes us care about this latest reincarnation of the world is peachy teacher,1,synonym_replacement,138
+we ve seen it all before in one form or another but director hoffman with great help from kevin kline pretend us care about this in style renascence of the world is greatest teacher,1,synonym_replacement,138
+we ve seen it all before in one signifier or some other but director hoffman with nifty help from kevin kline makes us care about this latest reincarnation of the world is greatest teacher,1,synonym_replacement,138
+watching this gentle mesmerizing portraiture of a military man coming to terms with time you barely realize your mind is being blown,1,synonym_replacement,139
+watch this gentle mesmerizing portrayal of a man coming to terms with time you barely realize your mind is being blown,1,synonym_replacement,139
+look out this gentle mesmerizing portrait of a man coming to terms with time you barely realize your mind is being screw up,1,synonym_replacement,139
+at its most basic this cartoon adventure is that twist in the hair exhilarating,1,synonym_replacement,140
+at its most basic this cartoon adventure is that hint in the hair exhilarating,1,synonym_replacement,140
+at its most introductory this cartoon adventure is that wind in the hair exhilarating,1,synonym_replacement,140
+the charm of the lead performances allow us to forget most of the film is problems,1,synonym_replacement,141
+the charms of the lead performances allow the states to forget most of the film is problems,1,synonym_replacement,141
+the charms of the lead functioning allow us to forget most of the film is problems,1,synonym_replacement,141
+hampered no paralyzed by a self indulgent script that object for poetry and ends up sounding like satire,0,synonym_replacement,142
+hampered no paralyzed by a self indulgent script that aims for poetry and ends up sounding like irony,0,synonym_replacement,142
+hampered no paralyzed by a self indulgent playscript that aims for poetry and ends up sounding like satire,0,synonym_replacement,142
+a sloppy amusing comedy that go along from a stunningly unoriginal premise,1,synonym_replacement,143
+a overemotional amusing comedy that proceeds from a stunningly unoriginal premise,1,synonym_replacement,143
+a sloppy amusing comedy that proceeds from a spectacularly unoriginal premise,1,synonym_replacement,143
+the film aims to be laughable uplifting and moving sometimes all at once,1,synonym_replacement,144
+the film aims to be funny elate and moving sometimes all at once,1,synonym_replacement,144
+the film aims to be funny uplifting and affect sometimes all at once,1,synonym_replacement,144
+the story is inspiring ironic and revelatory of just how laughable and money oriented the record industry really is,1,synonym_replacement,145
+the story is inspiring ironic and revelatory of just how ridiculous and money oriented the record industriousness really is,1,synonym_replacement,145
+the story is inspiring wry and revelatory of just how ridiculous and money oriented the record industry really is,1,synonym_replacement,145
+like a fish that is lived too long austin powers in goldmember has some unnecessary parts and is sort of improper in places,0,synonym_replacement,146
+like a fish that is go too long austin powers in goldmember has some unneeded parts and is kinda wrong in places,0,synonym_replacement,146
+same a fish that is lived too long austin powers in goldmember has some unnecessary parts and is kinda wrong in billet,0,synonym_replacement,146
+what distinguishes time of favor from countless other thrillers is its implicit in business with the consequences of words and with the complicated emotions fueling terrorist acts,1,synonym_replacement,147
+what recognise time of favor from countless other thrillers is its underlying concern with the outcome of words and with the complicated emotions fueling terrorist acts,1,synonym_replacement,147
+what distinguishes prison term of favor from infinite other thrillers is its underlying concern with the consequences of words and with the complicated emotions fueling terrorist acts,1,synonym_replacement,147
+an harbor if ultimately minor thriller,1,synonym_replacement,148
+an entertaining if at long last minor thriller,1,synonym_replacement,148
+an flirt with if ultimately minor thriller,1,synonym_replacement,148
+just when you think that every potential angle has been beat by documentarians another new film emerges with yet another remarkable yet shockingly little known perspective,1,synonym_replacement,149
+just when you think that every possible angle has been beat by documentarians another new film egress with yet another remarkable yet shockingly little known perspective,1,synonym_replacement,149
+just when you think that every potential angle has been exhausted by documentarians another new film emerges with yet another remarkable yet shockingly little known position,1,synonym_replacement,149
+it could have been something special but deuce things drag it down to mediocrity manager clare peploe is mistake of marivaux is rhythms and mira sorvino is limitations as a classical actress,0,synonym_replacement,150
+it could have been something extra but two matter drag it down to mediocrity theater director clare peploe is misunderstanding of marivaux is rhythms and mira sorvino is limitations as a classical actress,0,synonym_replacement,150
+it could have been something special but two things drag on it down to mediocrity theatre director clare peploe is misinterpret of marivaux is rhythms and mira sorvino is limitations as a classical actress,0,synonym_replacement,150
+a summer amusement adults can see without feeling embarrassed but it could have been more,1,synonym_replacement,151
+a summer entertainment adults can see without palpate embarrassed but it could have been more,1,synonym_replacement,151
+a summer amusement adults can see without feeling embarrassed but it could have been more,1,synonym_replacement,151
+fails in making this character understandable in getting under her cutis in exploring motivation well before the end the film grows as slow as its fictional character about whose fate it is hard to care,0,synonym_replacement,152
+fails in making this character understandable in getting under her skin in exploring motivation intimately before the finish the film grows as tedious as its characters about whose fate it is hard to care,0,synonym_replacement,152
+fails in making this character understandable in getting under her sputter in exploring need well before the end the film grows as thudding as its characters about whose fate it is hard to care,0,synonym_replacement,152
+turns a potentially interesting idea into an excruciating film school experience that meet better only for the film is publicists or for citizenry who acquire as many drugs as the film is characters,0,synonym_replacement,153
+turns a potentially interesting idea into an excruciating film school experience that plays better only for the film is publicizer or for masses who take as many drugs as the film is part,0,synonym_replacement,153
+turns a potentially matter to idea into an excruciating film school go through that plays better only for the film is publicists or for people who take as many drug as the film is characters,0,synonym_replacement,153
+it is a rattling sobering heart felt drama,1,synonym_replacement,154
+it is a wonderful sobering heart felt dramatic event,1,synonym_replacement,154
+it is a wonderful sobering heart mat drama,1,synonym_replacement,154
+the movie does national trust think much of its characters its protagonist or of us,0,synonym_replacement,155
+the movie does nt retrieve much of its characters its protagonist or of us,0,synonym_replacement,155
+the moving picture show does nt think much of its characters its protagonist or of us,0,synonym_replacement,155
+it is too self important and plodding to be funny and too nip off and abbreviated to be an epic,0,synonym_replacement,156
+it is too self important and plodding to be funny and too clipped and abbreviated to be an larger than life,0,synonym_replacement,156
+it is too self important and plodding to be singular and too clipped and abbreviated to be an epic,0,synonym_replacement,156
+this surreal gilliam esque moving picture show is also a troubling interpretation of ecclesiastes,1,synonym_replacement,157
+this surreal gilliam esque motion picture show is also a troubling interpretation of ecclesiastes,1,synonym_replacement,157
+this surreal gilliam esque film is also a perturb interpretation of ecclesiastes,1,synonym_replacement,157
+the most offensive thing about the flick is that hollywood expects people to pay to see it,0,synonym_replacement,158
+the most offensive thing about the movie is that hollywood expects people to pay to check it,0,synonym_replacement,158
+the most offensive affair about the movie is that hollywood expects people to pay to see it,0,synonym_replacement,158
+in the end the film is le the cheap thriller you d expect than it is a fairly revealing study of its two chief characters damaged goods mass whose orbits will inevitably and dangerously collide,1,synonym_replacement,159
+in the end the film is less the cheap thriller you d look than it is a fairly revealing study of its two main reference damaged goodness people whose orbits will inevitably and dangerously collide,1,synonym_replacement,159
+in the oddment the film is less the cheap thriller you d expect than it is a fairly revealing study of its two main role damaged goods people whose orbits will inevitably and perilously collide,1,synonym_replacement,159
+the entire moving picture show is about a boring sad man being boring and sad,0,synonym_replacement,160
+the entire pic is about a boring sad man being boring and sad,0,synonym_replacement,160
+the entire picture is about a boring sad man being boring and sad,0,synonym_replacement,160
+just not campy decent,0,synonym_replacement,161
+just not camp enough,0,synonym_replacement,161
+just not campy decent,0,synonym_replacement,161
+despite an telling roster of stars and direction from kathryn bigelow the weight of water is oppressively heavy,0,synonym_replacement,162
+disdain an impressive roster of stars and direction from kathryn bigelow the weight of water is oppressively heavy,0,synonym_replacement,162
+despite an impressive roster of stars and direction from kathryn bigelow the weight of water is oppressively leaden,0,synonym_replacement,162
+when your subject is illusion versus reality should nt the reality seem at least jolly real,0,synonym_replacement,163
+when your subject is illusion versus reality should nt the reality seem at least passably substantial,0,synonym_replacement,163
+when your subject is illusion versus reality should national trust the reality seem at least passably real,0,synonym_replacement,163
+khouri manages with terrific flair to keep the extremes of screwball travesty and blood curdling kinsperson intensity on one continuum,1,synonym_replacement,164
+khouri manages with grand flair to sustain the extremes of screwball farce and blood curdling family intensity on one continuum,1,synonym_replacement,164
+khouri manages with fantastic flair to keep the extremes of screwball farce and rip curdling family intensity on one continuum,1,synonym_replacement,164
+it is a chef doeuvre,1,synonym_replacement,165
+it is a chef doeuvre,1,synonym_replacement,165
+it is a chef doeuvre,1,synonym_replacement,165
+romantic comedy and dogme filmmaking crataegus laevigata seem odd bedfellows but they turn out to be delightfully compatible here,1,synonym_replacement,166
+romantic comedy and dogme filmmaking may seem peculiar bedfellows but they turn out to be delightfully compatible here,1,synonym_replacement,166
+romantic comedy and dogme filmmaking may seem peculiar bedfellows but they turn out to be delightfully compatible here,1,synonym_replacement,166
+about schmidt go to nicholson,1,synonym_replacement,167
+about schmidt belong to to nicholson,1,synonym_replacement,167
+about helmut schmidt belongs to nicholson,1,synonym_replacement,167
+macdowell gives give a solid anguished performance that eclipses nearly everything else she is always done,1,synonym_replacement,168
+edward macdowell gives give a solid anguished performance that eclipses nearly everything else she is ever done,1,synonym_replacement,168
+macdowell gives give a solid anguished performance that eclipses nearly everything else she is always done,1,synonym_replacement,168
+wewannour money back in reality,0,synonym_replacement,169
+wewannour money back really,0,synonym_replacement,169
+wewannour money back in reality,0,synonym_replacement,169
+it is a clear eyed portrait of an intensely lived time fulfil with nervous energy lesson ambiguity and great uncertainties,1,synonym_replacement,170
+it is a clear eyed portraiture of an intensely lived time filled with nervous energy moral ambiguity and nifty uncertainties,1,synonym_replacement,170
+it is a clear eyed portrait of an intensely lived time filled with nervous vim lesson ambiguity and great uncertainties,1,synonym_replacement,170
+not exactly the bees knee,0,synonym_replacement,171
+not exactly the follow knees,0,synonym_replacement,171
+not incisively the bees knees,0,synonym_replacement,171
+michael gerbosi is script is economically packed with secern scenes,1,synonym_replacement,172
+michael gerbosi is script is economically mob with telling scenes,1,synonym_replacement,172
+michael gerbosi is script is economically compact with telling scenes,1,synonym_replacement,172
+director douglas mcgrath takes on nickleby with all the halfhearted zeal of an th level boy delving into required say,0,synonym_replacement,173
+director douglas mcgrath takes on nickleby with all the lukewarm zeal of an th grade boy delving into required record,0,synonym_replacement,173
+music director douglas mcgrath takes on nickleby with all the halfhearted zeal of an th grade boy delving into required learn,0,synonym_replacement,173
+that the true story by which all the fairy is men is allegedly inhale was a lot funnier and more deftly enacted than what is been cobbled together onscreen,0,synonym_replacement,174
+that the true storey by which all the queen is men is allegedly inspired was a lot funnier and more deftly act out than what is been cobbled together onscreen,0,synonym_replacement,174
+that the honest story by which all the queen is men is allegedly inspired was a lot funnier and more deftly enacted than what is been cobbled unitedly onscreen,0,synonym_replacement,174
+the end result is wish cold porridge with only the odd enjoyably chewy lump,0,synonym_replacement,175
+the end result is like cold porridge with only the odd enjoyably chewy hunk,0,synonym_replacement,175
+the end result is like inhuman porridge with only the odd enjoyably chewy lump,0,synonym_replacement,175
+it haunts you you ca national trust forget it you admire its conception and are able to resoluteness some of the confusions you had while watching it,1,synonym_replacement,176
+it haunts you you ca nt forget it you look up to its conception and are able to adjudicate some of the confusions you had while watching it,1,synonym_replacement,176
+it haunts you you ca national trust forget it you look up to its conception and are able to resolve some of the confusions you had while watching it,1,synonym_replacement,176
+forget the psychology study of romantic obsession and just watch the procession of costumes in castle and this wo national trust seem like such a bore,0,synonym_replacement,177
+block the psychological science study of romantic obsession and just watch the procession of costumes in castles and this wo nt seem like such a bore,0,synonym_replacement,177
+forget the psychology learn of romantic obsession and just watch the procession of costumes in castles and this wo national trust seem like such a bore,0,synonym_replacement,177
+the kind of film that leaves you scratching your direct in astonishment over the fact that so many talented people could participate in such an ill advised and poorly executed approximation,0,synonym_replacement,178
+the kind of film that leaves you scratching your head in amazement over the fact that so many talented people could take part in such an ill advised and badly put to death idea,0,synonym_replacement,178
+the tolerant of film that leave you scratching your head in amazement over the fact that so many talented people could participate in such an ill advised and ill executed idea,0,synonym_replacement,178
+off the draw is overlong and not well acted but accredit writer producer director adam watstein with finishing it at all,0,synonym_replacement,179
+off the claw is overlong and not well acted but credit writer producer theatre director adam watstein with finishing it at all,0,synonym_replacement,179
+off the thieve is overlong and not easily acted but credit writer producer director adam watstein with finishing it at all,0,synonym_replacement,179
+at the very least if you do nt know anything about jacques derrida when you walk into the theater you wo nt know often more when you leave,0,synonym_replacement,180
+at the very least if you do nt have a go at it anything about jacques derrida when you walk into the theater you wo nt have a go at it much more when you leave,0,synonym_replacement,180
+at the very least if you do nt screw anything about derrida when you walk into the theater you wo nt screw very much more when you leave,0,synonym_replacement,180
+cunning sophisticated and surprising,1,synonym_replacement,181
+tricky sophisticated and surprising,1,synonym_replacement,181
+crafty sophisticated and surprising,1,synonym_replacement,181
+a new film from vizor plympton the animation master is always welcome,1,synonym_replacement,182
+a unexampled film from bill plympton the animation master is always welcome,1,synonym_replacement,182
+a newly film from bill plympton the animation master is always welcome,1,synonym_replacement,182
+it does nt flinch from its faze prognosis namely that the legacy of warfare is a kind of perpetual pain,0,synonym_replacement,183
+it does nt flinch from its unsettling prognosis namely that the legacy of warfare is a kind of never ending pain,0,synonym_replacement,183
+it does nt quail from its unsettling prognosis namely that the legacy of war is a kind of perpetual anguish,0,synonym_replacement,183
+more wear out than anything,0,synonym_replacement,184
+more tire out than anything,0,synonym_replacement,184
+more outwear than anything,0,synonym_replacement,184
+his do work with actors is particularly impressive,1,synonym_replacement,185
+his work with role player is particularly impressive,1,synonym_replacement,185
+his work with actors is particularly telling,1,synonym_replacement,185
+sunk by way too a lot indulgence of scene chewing teeth gnashing actorliness,0,synonym_replacement,186
+sunk by way too much indulgence of scene chewing dentition gnashing actorliness,0,synonym_replacement,186
+washed up by way too much indulgence of scene chewing teeth gnashing actorliness,0,synonym_replacement,186
+it is an unstinting look at a coaction between damaged people that may or may not qual,1,synonym_replacement,187
+it is an unstinting look at a collaboration between damaged people that crataegus laevigata or crataegus laevigata not qual,1,synonym_replacement,187
+it is an unstinting look at a collaboration between damaged people that crataegus oxycantha or crataegus oxycantha not qual,1,synonym_replacement,187
+collapses under its own meager weight down,0,synonym_replacement,188
+collapses under its own meagerly weight,0,synonym_replacement,188
+collapses under its own meagerly weight,0,synonym_replacement,188
+cease however manages just to be depressing as the lead actor phones in his autobiographical performance,0,synonym_replacement,189
+quitting however manages just to be depressing as the lead actor phones in his autobiographic performance,0,synonym_replacement,189
+quitting however carry off just to be depressing as the lead actor phones in his autobiographical performance,0,synonym_replacement,189
+the dramatic play was so uninspiring that even a story immersed in love lust and trespass could nt keep my attention,0,synonym_replacement,190
+the drama was so uninspiring that even a level immersed in love lust and sin could nt keep my care,0,synonym_replacement,190
+the dramatic event was so uninspiring that evening a story immersed in love lust and sin could nt keep my attention,0,synonym_replacement,190
+due to some book weaknesses and the casting of the director is brother the film trails off into inconsequentiality,0,synonym_replacement,191
+due to some script weaknesses and the casting of the music director is brother the film trails off into inconsequentiality,0,synonym_replacement,191
+due to some script weaknesses and the casting of the director is brother the movie trails off into inconsequentiality,0,synonym_replacement,191
+suspend your disbelief here and now or you ll be shaking your head teacher all the way to the credits,0,synonym_replacement,192
+suspend your mental rejection here and now or you ll be shaking your head all the way to the credits,0,synonym_replacement,192
+debar your disbelief here and now or you ll be shaking your head all the way to the credits,0,synonym_replacement,192
+i did national trust smile,0,synonym_replacement,193
+i did nt smiling,0,synonym_replacement,193
+i did nt grin,0,synonym_replacement,193
+for all its problems the lady and the duke surprisingly manages neer to uprise boring which proves that rohmer still has a sense of his audience,1,synonym_replacement,194
+for all its problems the lady and the duke surprisingly manages never to grow tire which proves that rohmer allay has a sense of his audience,1,synonym_replacement,194
+for all its problems the lady and the duke surprisingly get by never to grow boring which leaven that rohmer still has a sense of his audience,1,synonym_replacement,194
+it is a drag how nettelbeck insure working women or at least this working woman for whom she shows little sympathize,0,synonym_replacement,195
+it is a drag how nettelbeck ensure exercise women or at least this exercise woman for whom she shows little understanding,0,synonym_replacement,195
+it is a cart how nettelbeck sees working women or at least this working cleaning lady for whom she shows little understanding,0,synonym_replacement,195
+the script is a catastrophe with cloying messages and irksome characters,0,synonym_replacement,196
+the script is a disaster with cloying messages and slow characters,0,synonym_replacement,196
+the script is a catastrophe with cloying messages and irksome characters,0,synonym_replacement,196
+in its best moments resembles a forged high school production of grease without benefit of song,0,synonym_replacement,197
+in its best moments resembles a bad in high spirits school production of grease without benefit of song,0,synonym_replacement,197
+in its topper moments resembles a bad high school production of grease without benefit of song,0,synonym_replacement,197
+it is a fine focused piece of work that reopens an interesting controversy and never yield to sensationalism,1,synonym_replacement,198
+it is a fine focused piece of work that reopens an interesting controversy and never succumbs to empiricism,1,synonym_replacement,198
+it is a amercement focused piece of work that reopens an interesting controversy and never succumbs to sensationalism,1,synonym_replacement,198
+a triumph of pure guile and passionate heart,1,synonym_replacement,199
+a triumph of pure slyness and passionate heart,1,synonym_replacement,199
+a triumph of vestal craft and passionate heart,1,synonym_replacement,199
+not everything in this ambitious comic escapade work on but coppola along with his sister sofia is a real filmmaker,1,synonym_replacement,200
+not everything in this ambitious comic lark works but coppola along with his sister sofia is a real filmmaker,1,synonym_replacement,200
+not everything in this ambitious comic escapade works but francis ford coppola along with his sister sofia is a real filmmaker,1,synonym_replacement,200
+the emotions are raw and will strike a face with anyone who is ever had family trauma,1,synonym_replacement,201
+the emotions are raw and will strike a nerve with anyone who is ever so had family trauma,1,synonym_replacement,201
+the emotions are raw and will strike a nerve with anyone who is of all time had family trauma,1,synonym_replacement,201
+it deserves to be seen by anyone with even a passing interest in the consequence shaping the world beyond their own apparent horizon,1,synonym_replacement,202
+it deserves to be seen by anyone with even a passing stake in the events formation the world beyond their own horizons,1,synonym_replacement,202
+it deserves to be seen by anyone with even a departure interest in the events shaping the world beyond their own purview,1,synonym_replacement,202
+two turn potboiler,0,synonym_replacement,203
+two snatch potboiler,0,synonym_replacement,203
+deuce bit potboiler,0,synonym_replacement,203
+the movie directed by mick jackson leaves no platitude unturned from the predictable plot to the characters straight out of key casting,0,synonym_replacement,204
+the movie directed by mick jackson leaves no cliche unturned from the predictable plot to the characters neat out of central spew,0,synonym_replacement,204
+the movie directed by mickey jackson leaves no cliche unturned from the predictable game to the characters straight out of central casting,0,synonym_replacement,204
+merriment and nimble,1,synonym_replacement,205
+merriment and nimble,1,synonym_replacement,205
+playfulness and nimble,1,synonym_replacement,205
+big err,0,synonym_replacement,206
+big misapprehension,0,synonym_replacement,206
+self aggrandising mistake,0,synonym_replacement,206
+the film boasts dry humor and jarring shocks summation moments of breathtaking mystery,1,synonym_replacement,207
+the take boasts dry humor and jarring shocks plus moments of breathtaking mystery,1,synonym_replacement,207
+the film boasts dry humor and jarring shocks plus moments of breathless mystery,1,synonym_replacement,207
+you may feel compelled to learn the film twice or pick up a book on the subject,1,synonym_replacement,208
+you english hawthorn feel compelled to watch the film twice or pick up a book on the subject,1,synonym_replacement,208
+you may feel compelled to watch the film twice or choice up a book on the subject,1,synonym_replacement,208
+west coast rap wars this modern mob euphony drama never fails to fascinate,1,synonym_replacement,209
+west coast rap wars this modern mob music drama neer fails to fascinate,1,synonym_replacement,209
+west coast rap wars this modern mob music drama never fails to enamour,1,synonym_replacement,209
+children christian or otherwise deserve to hear the full chronicle of jonah is despair in all its agonizing catch glory even if they drop years trying to comprehend it,1,synonym_replacement,210
+children christian or otherwise deserve to see the full phase of the moon story of jonah is despair in all its agonizing catch glory even if they spend years trying to comprehend it,1,synonym_replacement,210
+children christian or otherwise deserve to hear the entire story of book of jonah is despair in all its agonizing catch glory even if they spend years trying to comprehend it,1,synonym_replacement,210
+if they broke out into enlarge choreography singing and fingers breadth snapping it might have held my attention but as it stands i kept looking for the finis exit from brooklyn,0,synonym_replacement,211
+if they bump out into elaborate choreography blab and finger snapping it might have hold in my attention but as it stands i kept looking for the last exit from brooklyn,0,synonym_replacement,211
+if they die out into elaborate choreography singing and thumb snapping it might have held my attention but as it stands i kept sounding for the last exit from brooklyn,0,synonym_replacement,211
+i could national trust recommend this film more,1,synonym_replacement,212
+i could national trust recommend this film more,1,synonym_replacement,212
+i could national trust recommend this film more,1,synonym_replacement,212
+translating complex characters from novel to the big screen is an impossible task but they are true to the gist of what it is to be ya ya,1,synonym_replacement,213
+translating complex characters from novel to the big screen is an impossible task but they are true to the core of what it is to be ya ya,1,synonym_replacement,213
+translating complex characters from novels to the big screen is an unsufferable task but they are unfeigned to the essence of what it is to be ya ya,1,synonym_replacement,213
+their parents would do well to cram earplugs in their ears and put pillow slip over their heads for minutes,0,synonym_replacement,214
+their parents would do well to cram earplug in their ears and put pillowcases over their heads for minutes,0,synonym_replacement,214
+their parents would do well to grind away earplugs in their ears and put pillowcases over their heads for minutes,0,synonym_replacement,214
+honour,1,synonym_replacement,215
+honour,1,synonym_replacement,215
+honor,1,synonym_replacement,215
+upsetting and view provoking the take has an odd purity that does nt bring you into the characters so much as it has you study them,1,synonym_replacement,216
+disturb and thought provoking the film has an peculiar purity that does nt bring you into the characters so much as it has you study them,1,synonym_replacement,216
+upsetting and thought provoking the film has an odd pureness that does nt bring you into the characters so a good deal as it has you study them,1,synonym_replacement,216
+starts as a sporting lady little lemon drop of a movie and ends up as a bitter pill,0,synonym_replacement,217
+starts as a tart petty lemon drop of a movie and ends up as a bitter pill,0,synonym_replacement,217
+starts as a lemonlike little lemon drop of a movie and ends up as a bitter pill,0,synonym_replacement,217
+a piddling less extreme than in the past times with longer exposition sequences between them and with fewer gags to break the tedium,0,synonym_replacement,218
+a little less extreme than in the past with longer exposition chronological succession between them and with fewer muzzle to break the tedium,0,synonym_replacement,218
+a little less extreme than in the past with longer exposition sequences between them and with few gag to break the tedium,0,synonym_replacement,218
+a funny triumphal and moving documentary,1,synonym_replacement,219
+a funny exultant and moving documentary,1,synonym_replacement,219
+a funny triumphant and displace documentary,1,synonym_replacement,219
+an entertaining mix of period drama and matt out farce that should please history fans,1,synonym_replacement,220
+an entertaining mix of period drama and flat out farce that should please history lover,1,synonym_replacement,220
+an entertaining mix of period drama and flat out farce that should delight history fans,1,synonym_replacement,220
+during the tux is minutes of screen time there is nt one true chan moment,0,synonym_replacement,221
+during the tuxedo is minutes of covert time there is nt one true chan moment,0,synonym_replacement,221
+during the tuxedo is minutes of screen time there is nt nonpareil true chan moment,0,synonym_replacement,221
+there is just something about watching a squad of psychopathologic underdogs whale the tar out of unsuspecting lawmen that scope across time and distance,1,synonym_replacement,222
+there is just something about watching a squad of psychopathic underdogs whale the jack tar out of unsuspecting lawmen that reaches crossways time and distance,1,synonym_replacement,222
+there is just something about watching a squad of psychopathic underdogs whale the tar out of unsuspecting lawmen that reaches crosswise sentence and distance,1,synonym_replacement,222
+a serial publication of tales told with the intricate preciseness of the best short story writing,1,synonym_replacement,223
+a series of tales told with the intricate preciseness of the expert short story writing,1,synonym_replacement,223
+a series of tales told with the intricate preciseness of the best short write up writing,1,synonym_replacement,223
+a bright inventive thoroughly winning flight of revisionist illusion,1,synonym_replacement,224
+a bright inventive soundly winning flight of revisionist fancy,1,synonym_replacement,224
+a bright inventive thoroughly winning trajectory of revisionist fancy,1,synonym_replacement,224
+most peerlessly unsettling,0,synonym_replacement,225
+almost peerlessly enervate,0,synonym_replacement,225
+almost peerlessly faze,0,synonym_replacement,225
+a dashing and absorbing come out of the closet with one of france is most inventive directors,1,synonym_replacement,226
+a dashing and absorbing outing with matchless of france is most inventive directors,1,synonym_replacement,226
+a dashing and absorbing sashay with one of france is most inventive directors,1,synonym_replacement,226
+a true delectation,1,synonym_replacement,227
+a true transport,1,synonym_replacement,227
+a true enjoy,1,synonym_replacement,227
+complete want of originality cleverness or even visible effort,0,synonym_replacement,228
+complete lack of originality cleverness or even seeable effort,0,synonym_replacement,228
+complete lack of originality cleverness or evening visible effort,0,synonym_replacement,228
+a few nonbelievers may afterthought their attitudes when they see the joy the characters take in this creed but skeptics are national trust likely to enter the theater,1,synonym_replacement,229
+a few nonbelievers may rethink their attitudes when they see the joy the characters take in this creed but doubter are nt likely to enter the field,1,synonym_replacement,229
+a few nonbelievers may rethink their attitudes when they get wind the joy the characters take in this gospel but skeptics are nt likely to enter the theater,1,synonym_replacement,229
+like the rugrats movies the wild thornberrys movie does nt offer much more than the series but its stress on caring for animals and respecting other civilization is specially welcome,1,synonym_replacement,230
+the likes of the rugrats movies the wild thornberrys movie does national trust bid much more than the series but its emphasis on caring for animals and respecting other cultures is particularly welcome,1,synonym_replacement,230
+like the rugrats movies the wild thornberrys movie does national trust offer a great deal more than the series but its emphasis on caring for animals and respecting other cultures is particularly receive,1,synonym_replacement,230
+borstal boy represents the worst tolerant of filmmaking the tolerant that pretends to be passionate and truthful but is really frustratingly faint and soggy,0,synonym_replacement,231
+borstal boy represents the worst kind of filmmaking the kind that pretends to be passionate and truthful but is really frustratingly fainthearted and sluggish,0,synonym_replacement,231
+borstal boy represents the worst kind of filmmaking the kind that pretends to be passionate and truthful but is genuinely frustratingly timid and mucky,0,synonym_replacement,231
+you feel good you feel sad you feel pass water off but in the closing you feel alive which is what they did,1,synonym_replacement,232
+you feel good you feel sad you feel pixilated off but in the closing you feel alive which is what they did,1,synonym_replacement,232
+you feel soundly you feel sad you feel soused off but in the end you feel alive which is what they did,1,synonym_replacement,232
+director tom shadyac and maven kevin costner glumly mishandle the story is foretell premise of a physician who needs to heal himself,0,synonym_replacement,233
+director tom shadyac and star kevin costner glumly muck up the story is promising premise of a physician who needs to bring around himself,0,synonym_replacement,233
+manager tom shadyac and star kevin costner glumly mishandle the story is promising premise of a medico who needs to heal himself,0,synonym_replacement,233
+as relationships careen director robert j siegel admit the characters to inhabit their world without cleaving to a narrative arc,1,synonym_replacement,234
+as relationships shift director robert watt second siegel allows the characters to inhabit their world without cleaving to a story arc,1,synonym_replacement,234
+as kinship shift conductor robert j siegel allows the characters to inhabit their world without cleaving to a narrative arc,1,synonym_replacement,234
+deadeningly dull mired in convoluted melodrama nonsensical jargon and fuddled upper lip laboriousness,0,synonym_replacement,235
+deadeningly dull mired in convoluted melodrama nonsensical jargoon and stiff upper lip laboriousness,0,synonym_replacement,235
+deadeningly numb mired in convoluted melodrama nonsensical jargon and stiff upper lip laboriousness,0,synonym_replacement,235
+jacquot has filmed the opera exactly as the libretto directs ideally capturing the opera is drama and songfulness,1,synonym_replacement,236
+jacquot has filmed the opera on the dot as the libretto directs ideally capturing the opera is drama and lyricism,1,synonym_replacement,236
+jacquot has filmed the opera exactly as the libretto directs ideally get the opera is drama and lyricism,1,synonym_replacement,236
+it can be safely recommended as a video videodisk babysitter,1,synonym_replacement,237
+it can be safely recommended as a video videodisk babysitter,1,synonym_replacement,237
+it can be safely recommended as a tv dvd babysitter,1,synonym_replacement,237
+it is played in the most true faced fashion with little humor to lighten things up,0,synonym_replacement,238
+it is played in the most directly faced fashion with little humor to lighten things up,0,synonym_replacement,238
+it is played in the most straight faced style with little humor to lighten things up,0,synonym_replacement,238
+though it goes further than both anyone who has seen the hunger or cat citizenry will find little new here but a tasty carrying into action from vincent gallo move up this tale of cannibal lust above the ordinary,1,synonym_replacement,239
+though it goes further than both anyone who has examine the hunger or cat people will find little new here but a tasty operation from vincent gallo lifts this tale of cannibal lust above the ordinary bicycle,1,synonym_replacement,239
+though it goes further than both anyone who has witness the hunger or cat people will uncovering little new here but a tasty performance from vincent gallo rear this tale of cannibal lust above the ordinary,1,synonym_replacement,239
+the rich performances by friel and especially williams an american actress who suit amply english round out the square edges,1,synonym_replacement,240
+the rich performances by friel and especially williams an american actress who become to the full english round out the square edges,1,synonym_replacement,240
+the rich performances by friel and peculiarly williams an american actress who become fully english round out the square edges,1,synonym_replacement,240
+astonishingly lame,0,synonym_replacement,241
+amazingly square,0,synonym_replacement,241
+astonishingly lame,0,synonym_replacement,241
+more good than nifty but freeman and judd make it work,1,synonym_replacement,242
+more good than great but freeman and judd pull in it work,1,synonym_replacement,242
+more good than great but freeman and judd make it shape,1,synonym_replacement,242
+a engagement between bug eye theatre and dead eye matinee,0,synonym_replacement,243
+a struggle between bug eye theatre and dead eye matinee,0,synonym_replacement,243
+a battle between bug eye field and dead eye matinee,0,synonym_replacement,243
+i m sorry to say that this should seal the deal arnold is not nor will he be rachis,0,synonym_replacement,244
+i m sorry to say that this should seal of approval the deal arnold is not nor will he be back,0,synonym_replacement,244
+i megabyte sorry to say that this should seal the deal arnold is not nor will he be back,0,synonym_replacement,244
+though jackson does nt always succeed in integrating the characters in the foreground into the extraordinarily rich landscape painting it moldiness be said that he is an imaginative filmmaker who can view the forest for the trees,1,synonym_replacement,245
+though jackson does nt forever deliver the goods in integrating the characters in the foreground into the extraordinarily rich landscape it must be said that he is an imaginative filmmaker who can hear the forest for the trees,1,synonym_replacement,245
+though jackson does nt always succeed in integrating the characters in the foreground into the extraordinarily rich landscape painting it must be pronounce that he is an imaginative filmmaker who can see the forest for the sir herbert beerbohm tree,1,synonym_replacement,245
+van wilder has a built in audience but only among those who are dry out from spring break and are tranquilize unconcerned about what they ingest,0,synonym_replacement,246
+van wilder has a establish in consultation but only among those who are drying out from spring break and are still unconcerned about what they ingest,0,synonym_replacement,246
+van wilder has a built in audience but only among those who are dry out from spring break and are still unconcerned about what they take,0,synonym_replacement,246
+what sets ms birot is film apart from others in the genre is a greater care to the raise and particularly the fateful fathers in the emotional evolution of the deuce bewitched adolescents,1,synonym_replacement,247
+what sets ms birot is cinema apart from others in the genre is a greater attention to the parents and especially the fateful fathers in the emotional evolution of the two enamour adolescents,1,synonym_replacement,247
+what sets disseminated multiple sclerosis birot is motion picture show apart from others in the genre is a greater attention to the parents and particularly the fateful founder in the emotional evolution of the two bewitched adolescents,1,synonym_replacement,247
+a kitschy mess that never rings true,0,synonym_replacement,248
+a sentimental wad that never rings true,0,synonym_replacement,248
+a sentimental great deal that never rings true,0,synonym_replacement,248
+but the talented cast alone will keep you watch out as will the fight scenes,1,synonym_replacement,249
+but the talented cast solely will keep you watching as will the fight scenes,1,synonym_replacement,249
+but the talented cast alone will keep you observation as will the fight scenes,1,synonym_replacement,249
+allen is underestimated beguile delivers more goodies than lumps of coal,1,synonym_replacement,250
+allen is underestimated charm delivers more kickshaw than lumps of coal,1,synonym_replacement,250
+allen is lowball charm delivers more goodies than lumps of coal,1,synonym_replacement,250
+an elegant work intellectual nourishment of love is as consistently engaging as it is revealing,1,synonym_replacement,251
+an elegant work solid food of love is as consistently engaging as it is revealing,1,synonym_replacement,251
+an refined work food of love is as consistently engaging as it is revealing,1,synonym_replacement,251
+rapid climb,1,synonym_replacement,252
+whizz along,1,synonym_replacement,252
+zoom along,1,synonym_replacement,252
+a huge box office reach in korea shiri is a must for genre fans,1,synonym_replacement,253
+a huge box office slay in korea shiri is a must for genre fans,1,synonym_replacement,253
+a huge box office hit in han gook shiri is a must for genre fans,1,synonym_replacement,253
+it is a technically superb film shining with all the usual spielberg dash expertly utilizing the talents of his top notch originative team,1,synonym_replacement,254
+it is a technically superb film shining with all the usual spielberg dash expertly utilizing the talents of his top off notch creative team,1,synonym_replacement,254
+it is a technically superb film shining with all the usual spielberg flair expertly utilize the talents of his top side notch creative team,1,synonym_replacement,254
+what start out as a conventional thriller evolves into a gorgeously atmospheric meditation on life changing chance encounters,1,synonym_replacement,255
+what begins as a conventional thriller evolves into a gorgeously atmospheric meditation on life transfer chance encounters,1,synonym_replacement,255
+what begins as a conventional thriller evolve into a gorgeously atmospheric meditation on life changing chance encounters,1,synonym_replacement,255
+a moving picture with a great premise but only a great premise,1,synonym_replacement,256
+a film with a great assumption but only a great assumption,1,synonym_replacement,256
+a moving picture show with a great premise but only a great premise,1,synonym_replacement,256
+on that score the film surely does nt disappoint,1,synonym_replacement,257
+on that score the motion picture show certainly does nt disappoint,1,synonym_replacement,257
+on that score the film surely does nt disappoint,1,synonym_replacement,257
+the acting costumes medicine cinematography and sound are all astounding given the production is austere locales,1,synonym_replacement,258
+the acting costumes music filming and sound are all astounding given the production is austere locales,1,synonym_replacement,258
+the acting costumes music cinematography and sound are all astounding establish the production is austere locales,1,synonym_replacement,258
+vincent gallo is right at home in this daniel chester french shocker playing his usual bad boy weirdo role,1,synonym_replacement,259
+vincent gallo is right at home in this french shocker playing his usual bad male child weirdo role,1,synonym_replacement,259
+vincent gallo is right at home in this french shocker playing his usual bad male child weirdo role,1,synonym_replacement,259
+very well written and directed with brutal honesty and esteem for its audience,1,synonym_replacement,260
+very well drop a line and directed with brutal honesty and respect for its audience,1,synonym_replacement,260
+very well written and directed with savage honesty and respect for its audience,1,synonym_replacement,260
+one senses in world traveler and in his earlier film that freundlich bears a grievous but obscure charge against fathers and circles it obsessively without making striking,0,synonym_replacement,261
+one senses in world traveller and in his in the beginning film that freundlich bears a grievous but obscure complaint against fathers and circles it obsessively without making contact,0,synonym_replacement,261
+one senses in universe traveler and in his earlier film that freundlich bears a grievous but obscure complaint against male parent and circles it obsessively without making contact,0,synonym_replacement,261
+neither parker nor donovan is a typical romantic lead but they bring a overbold quirky charm to the formula,1,synonym_replacement,262
+neither parker nor donovan is a typical amorous lead but they bring a fresh quirky charm to the formula,1,synonym_replacement,262
+neither parker nor donovan is a typical romantic lead but they bring a fresh quirky bewitch to the formula,1,synonym_replacement,262
+a giggle a mo,1,synonym_replacement,263
+a giggle a narrow,1,synonym_replacement,263
+a titter a minute,1,synonym_replacement,263
+in the ending the film feels homogenized and a bit contrived as if we re looking back at a tattered and ugly past with rise up tinted glasses,0,synonym_replacement,264
+in the end the film feels homogenized and a bit contrived as if we re looking back at a tattered and ugly past times with rose tinted methedrine,0,synonym_replacement,264
+in the end the film feels homogenized and a bit contrived as if we re looking back at a shattered and ugly retiring with rose tinted glasses,0,synonym_replacement,264
+an remarkably dry eyed even analytical approach to material that is generally played for maximum moisture,1,synonym_replacement,265
+an unusually dry eyed even analytical approach to real that is generally played for maximum moisture,1,synonym_replacement,265
+an unusually dry eyed even analytical approach to material that is generally played for maximum wet,1,synonym_replacement,265
+it made me want to get made up and go see this movie with my baby,1,synonym_replacement,266
+it made me want to get made up and fling see this movie with my sisters,1,synonym_replacement,266
+it made me want to get made up and go see this movie with my sis,1,synonym_replacement,266
+neither revelatory nor truly edgy merely crassly flamboyant and comedically laboured,0,synonym_replacement,267
+neither revelatory nor truly edgy merely crassly flamboyant and comedically drive,0,synonym_replacement,267
+neither revelatory nor truly edgy but crassly flamboyant and comedically labored,0,synonym_replacement,267
+boasts a smattering of virtuosic set pieces and offers a fair amount of trashy kinky fun,1,synonym_replacement,268
+boasts a handful of virtuosic typeset pieces and offers a fair amount of trashy kinky fun,1,synonym_replacement,268
+blow a handful of virtuosic set pieces and offers a fair amount of trashy kinky fun,1,synonym_replacement,268
+i do nt mind having my heartstrings pulled but do nt plow me like a fool,0,synonym_replacement,269
+i do nt mind having my heartstrings pulled but do nt treat me like a fall guy,0,synonym_replacement,269
+i do national trust mind having my heartstrings pulled but do national trust treat me like a fool,0,synonym_replacement,269
+this is a sincerely crafted picture that deserves to emerge from the traffic jam of vacation movies,1,synonym_replacement,270
+this is a truly crafted picture that deserves to emerge from the traffic jam of holiday movies,1,synonym_replacement,270
+this is a sincerely crafted picture that deserves to emerge from the traffic jam of holiday motion picture,1,synonym_replacement,270
+an unintentionally surreal fry is painting in which actors in bad bear suits enact a sort of inter species parody of a vh behind the music episode,0,synonym_replacement,271
+an unintentionally surreal minor is pic in which actors in bad bear suits enact a sort of inter species parody of a vh behind the music episode,0,synonym_replacement,271
+an accidentally surreal kid is picture in which actors in bad gestate suits enact a sort of inter species parody of a vh behind the music episode,0,synonym_replacement,271
+gay or straight kissing jessica stein is one of the greatest date pic in years,1,synonym_replacement,272
+gay or straight kissing jessica stein is one of the greatest date movies in eld,1,synonym_replacement,272
+gay or straight cuddling jessica stein is one of the greatest date movies in years,1,synonym_replacement,272
+it looks proficient but it is essentially empty,0,synonym_replacement,273
+it looks good but it is fundamentally empty,0,synonym_replacement,273
+it looks good but it is fundamentally empty,0,synonym_replacement,273
+and there is no way you wo nt be talking about the photographic film once you exit the theater,1,synonym_replacement,274
+and there is no way you wo nt be talking about the cinema once you exit the theater,1,synonym_replacement,274
+and there is no right smart you wo nt be talking about the film once you exit the theater,1,synonym_replacement,274
+much like robin williams death to smoochy has already reached its expiration engagement,0,synonym_replacement,275
+much like robin williams dying to smoochy has already reached its expiration date,0,synonym_replacement,275
+much like robin williams death to smoochy has already achieve its expiration date,0,synonym_replacement,275
+if you love the music and i do its hard to imagine having more fun watch out a documentary,1,synonym_replacement,276
+if you love the music and i do its hard to guess having more fun watching a documentary,1,synonym_replacement,276
+if you love the music and i do its hard to imagine having more fun watching a docudrama,1,synonym_replacement,276
+a collage of clich s and a dim echo of allusion to other films,0,synonym_replacement,277
+a collage of clich s and a dim echo of allusions to other motion picture,0,synonym_replacement,277
+a montage of clich s and a dim echo of allusions to other films,0,synonym_replacement,277
+norton is magnetized as graham,1,synonym_replacement,278
+norton is magnetic as billy graham,1,synonym_replacement,278
+norton is magnetic as whole meal flour,1,synonym_replacement,278
+thousand the widowmaker is a great yarn,1,synonym_replacement,279
+k the widowmaker is a bully yarn,1,synonym_replacement,279
+k the widowmaker is a great recital,1,synonym_replacement,279
+it might be easier to watch on video at home but that should national trust stop die severe french film connoisseurs from going out and enjoying the big screen experience,1,synonym_replacement,280
+it might be easier to watch on video at home but that should nt stop die voiceless daniel chester french film connoisseurs from going out and enjoying the big screen experience,1,synonym_replacement,280
+it might be easier to catch on video at home but that should nt stop die hard french film connoisseurs from going out and enjoying the self aggrandizing screen experience,1,synonym_replacement,280
+handle to be both repulsively sadistic and mundane,0,synonym_replacement,281
+manages to be both abominably sadistic and mundane,0,synonym_replacement,281
+manages to be both detestably sadistic and mundane,0,synonym_replacement,281
+an obvious re create of one of the best films ever made how could it not be,0,synonym_replacement,282
+an obvious copy of one of the best picture show ever made how could it not be,0,synonym_replacement,282
+an obvious copy of one of the best picture ever made how could it not be,0,synonym_replacement,282
+surprisingly the film is a hilarious risk and i shamelessly enjoyed it,1,synonym_replacement,283
+surprisingly the plastic film is a hilarious adventure and i shamelessly enjoyed it,1,synonym_replacement,283
+surprisingly the celluloid is a hilarious adventure and i shamelessly enjoyed it,1,synonym_replacement,283
+the cat is meow marks a return to var for director peter bogdanovich,1,synonym_replacement,284
+the cat is meow marks a return to form for director tool bogdanovich,1,synonym_replacement,284
+the cat is meow marks a generate to form for director peter bogdanovich,1,synonym_replacement,284
+it is an odd show pregnant with moods stillborn except as a harsh conceptual practice,0,synonym_replacement,285
+it is an odd show pregnant with temper stillborn except as a harsh conceptual exercise,0,synonym_replacement,285
+it is an odd prove pregnant with moods stillborn except as a harsh conceptual exercise,0,synonym_replacement,285
+but if the essence of magic is its make think promise of life that sailplane above the material realm this is the opposite of a truly magical movie,0,synonym_replacement,286
+but if the essence of magic is its make believe promise of life that soars above the cloth realm this is the diametrical of a truly magical movie,0,synonym_replacement,286
+but if the essence of wizard is its make believe promise of life that soars above the material region this is the opposite of a truly magical movie,0,synonym_replacement,286
+the film is all over the rank really,0,synonym_replacement,287
+the film is all over the place genuinely,0,synonym_replacement,287
+the film is all over the topographic point really,0,synonym_replacement,287
+without any save value whatsoever,0,synonym_replacement,288
+without any redeeming value any,0,synonym_replacement,288
+without any redeeming value whatever,0,synonym_replacement,288
+it is a familiar chronicle but one that is presented with great sympathy and intelligence,1,synonym_replacement,289
+it is a conversant story but one that is presented with great sympathy and intelligence,1,synonym_replacement,289
+it is a familiar story but one that is represent with great sympathy and intelligence,1,synonym_replacement,289
+manages to show life in all of its banality when the intention is quite the opponent,0,synonym_replacement,290
+manages to show life in all of its bromide when the intention is quite the opposite,0,synonym_replacement,290
+manages to point life in all of its banality when the intention is quite the opposite,0,synonym_replacement,290
+read my lips is to be viewed and treasured for its extraordinary intelligence operation and originality as well as its lyric variations on the game of love,1,synonym_replacement,291
+read my lips is to be watch and treasured for its extraordinary intelligence agency and originality as well as its lyrical variations on the game of love,1,synonym_replacement,291
+read my lips is to be viewed and cherish for its extraordinary intelligence and originality as well as its lyrical variations on the mettlesome of love,1,synonym_replacement,291
+this director is cut which adds minutes takes a great plastic film and turns it into a mundane soap opera,0,synonym_replacement,292
+this director is cut which adds minutes takes a great film and turns it into a mundane soap opera house,0,synonym_replacement,292
+this director is cut which adds minutes takes a great film and turns it into a mundane easy lay opera,0,synonym_replacement,292
+the ensemble cast turns in a collectively stellar carrying out and the writing is tight and truthful full of the moon of funny situations and honest observations,1,synonym_replacement,293
+the ensemble cast turns in a collectively stellar public presentation and the writing is tight and true full of funny situations and honest observations,1,synonym_replacement,293
+the ensemble cast turns in a collectively stellar performance and the committal to writing is tight and truthful full of funny spot and honest observations,1,synonym_replacement,293
+what saves this deep affecting film from being merely a collection of wrenching encase is corcuera is attention to detail,1,synonym_replacement,294
+what saves this deeply pretend film from being merely a appeal of wrenching cases is corcuera is attention to detail,1,synonym_replacement,294
+what keep open this deeply affecting flick from being merely a collection of wrenching cases is corcuera is attention to detail,1,synonym_replacement,294
+take nothing seriously and enjoy the rag,1,synonym_replacement,295
+take nothing earnestly and enjoy the ride,1,synonym_replacement,295
+take zippo seriously and enjoy the ride,1,synonym_replacement,295
+from the opening strains of the average white band is pick up the pieces you can sense the love,1,synonym_replacement,296
+from the opening strains of the average whiten band is pick up the pieces you can feel the love,1,synonym_replacement,296
+from the opening strains of the middling white band is pick up the pieces you can feel the love,1,synonym_replacement,296
+while the ensemble player who gained notice in guy ritchie is lock stock and ii smoking barrels and snatch has the bod he is unconvincing to become a household epithet on the basis of his first starring vehicle,0,synonym_replacement,297
+while the tout ensemble player who gained notice in guy ritchie is shut away stock and two smoking barrels and snatch up has the bod he is unlikely to become a household name on the basis of his first starring vehicle,0,synonym_replacement,297
+while the ensemble musician who gained notice in guy ritchie is lock stock and two smoking barrels and snatch has the bod he is unlikely to turn a household name on the groundwork of his first starring vehicle,0,synonym_replacement,297
+i could nt help but feel the pinched potential of this slapstick comedy,0,synonym_replacement,298
+i could nt assistance but feel the wasted potential of this slapstick comedy,0,synonym_replacement,298
+i could national trust help but feel the wasted potential of this slapstick comedy,0,synonym_replacement,298
+it is an offbeat cover that pokes fun at the democratic exercise while also analyze its significance for those who take part,1,synonym_replacement,299
+it is an far out treat that pokes fun at the democratic exercise while also analyse its significance for those who take part,1,synonym_replacement,299
+it is an offbeat treat that pokes playfulness at the democratic exercise while also canvas its significance for those who take part,1,synonym_replacement,299
+cypher too deep or substantial,0,synonym_replacement,300
+nothing too oceanic abyss or substantial,0,synonym_replacement,300
+nil too deep or substantial,0,synonym_replacement,300
