@@ -188,6 +188,7 @@ def get_dataset(dataset: str, n_train: int, n_val: int = 100):
         
         # Among subsets of the validation set corresponding to each label, get size of subset with min size
         n_val = min(list(Counter(d[list(d.keys())[1]]["label"]).values())) 
+        n_val = min(n_val, 500) # Avoid validating on too many samples - can lead to OOM errors.
 
         # Perform similar validation for n_train
         n_train_check = min(list(Counter(d[list(d.keys())[0]]["label"]).values())) 
