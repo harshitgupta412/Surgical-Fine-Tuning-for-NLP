@@ -208,6 +208,36 @@ def get_performance_metric(
         raise NotImplementedError()
 
 
+def update_relative_gradient_norm(model, relative_gradient_norm_list):
+    if model.__class__.__name__ == "GPT2LMHeadModel":
+        layers = model.transformer.h
+    elif model.__class__.__name__ == "BertLMHeadModel" or model.__class__.__name__ == "BertForSequenceClassification":
+        layers = model.bert.encoder.layer
+
+    num_layers = len(layers)
+    new_list = [max([torch.norm(i.grad)/torch.norm(i.data) for i in model.bert.encoder.layer[j].parameters()]) for j in range(12)]
+    if relative_gradient_norm_list is None:
+        relative_gradient_norm_list = new_list
+    else:
+        relative_gradient_norm_list = [relative_gradient_norm_list[i]+new_list[i] for i in range(len(new_list))]
+    print(new_list)
+    return relative_gradient_norm_list
+
+def update_snr(model, relative_gradient_norm_list):
+    if model.__class__.__name__ == "GPT2LMHeadModel":
+        layers = model.transformer.h
+    elif model.__class__.__name__ == "BertLMHeadModel" or model.__class__.__name__ == "BertForSequenceClassification":
+        layers = model.bert.encoder.layer
+
+    num_layers = len(layers)
+    new_list = [max([torch.square(torch.sum(i.grad))/torch.sum(torch.square(i.grad)) for i in model.bert.encoder.layer[j].parameters()]) for j in range(12)]
+    if relative_gradient_norm_list is None:
+        relative_gradient_norm_list = new_list
+    else:
+        relative_gradient_norm_list = [relative_gradient_norm_list[i]+new_list[i] for i in range(len(new_list))]
+    print(relative_gradient_norm_list)
+    return relative_gradient_norm_list
+
 def ft_classification(model, tok, x, y, mode, batch_size=8):
     model = copy.deepcopy(model)
     print("Size of training set =", len(x), len(y))
@@ -218,7 +248,7 @@ def ft_classification(model, tok, x, y, mode, batch_size=8):
     #         m.mlp.c_proj = LoRALayerWrapper(m.mlp.c_proj, int(mode[4:]))
 
     model.to(DEVICE)
-
+    relative_gradient_norm_list = None
     optimizer = torch.optim.Adam(parameters_to_fine_tune(model, mode), lr=1e-4)
     all_x = tok(
         x, return_tensors="pt", padding=True, truncation=True, max_length=100
@@ -238,6 +268,7 @@ def ft_classification(model, tok, x, y, mode, batch_size=8):
         logits = model(**x_).logits
         loss = get_loss(logits, y_)
         loss.backward()
+        relative_gradient_norm_list = update_snr(model, relative_gradient_norm_list)
         optimizer.step()
         optimizer.zero_grad()
         if args.debug:
@@ -249,8 +280,9 @@ def ft_classification(model, tok, x, y, mode, batch_size=8):
             pbar.set_description(f"Fine-tuning acc: {total_acc:.04f}")
             if total_acc >0.995:
                 break
-    return model
 
+    print(relative_gradient_norm_list)
+    return model
 
 def tokenize_gpt2_batch(
     tokenizer: transformers.GPT2Tokenizer, x: List[str], y: List[str]
