@@ -220,7 +220,7 @@ def update_relative_gradient_norm(model, relative_gradient_norm_list):
         relative_gradient_norm_list = new_list
     else:
         relative_gradient_norm_list = [relative_gradient_norm_list[i]+new_list[i] for i in range(len(new_list))]
-    print(new_list)
+    # print(new_list)
     return relative_gradient_norm_list
 
 def update_snr(model, relative_gradient_norm_list):
@@ -235,7 +235,7 @@ def update_snr(model, relative_gradient_norm_list):
         relative_gradient_norm_list = new_list
     else:
         relative_gradient_norm_list = [relative_gradient_norm_list[i]+new_list[i] for i in range(len(new_list))]
-    print(relative_gradient_norm_list)
+    # print(relative_gradient_norm_list)
     return relative_gradient_norm_list
 
 def ft_classification(model, tok, x, y, mode, batch_size=8):
