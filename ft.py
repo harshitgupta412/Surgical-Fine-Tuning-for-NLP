@@ -28,7 +28,7 @@ parser.add_argument("--model")
 parser.add_argument("--dataset")
 parser.add_argument("--k")
 parser.add_argument(
-    "--mode", default="all", type=str, help="all, last, first, middle, loraN"
+    "--mode", default="all", type=str, help="all, last, first, middle, integer"
 )
 parser.add_argument("--debug", action="store_true")
 parser.add_argument("--repeats", default=1, type=int)
@@ -38,9 +38,13 @@ parser.add_argument("--save_model", default=False, action="store_true")
 parser.add_argument("--evaluate", default=False, action="store_true")
 parser.add_argument(
     "--num_layers",
-    default=1,
-    type=int,
-    help="number of layers to train for first/last/middle modes",
+    help="number of layers to train",
+)
+parser.add_argument(
+    "--lora_mode",default="all",type=str,help="all, last, first, middle, integer, none, same"
+)
+parser.add_argument(
+    '--lora_k',
 )
 args = parser.parse_args()
 
@@ -52,8 +56,57 @@ else:
 
 print("Fine-tuning using device: ", DEVICE)
 
+def add_lora(model: nn.Module, mode: str, lora_k: int, num_layers: int = 1) -> nn.Module:
+    """
+    Add the LORA wrapper to the model
+    Args:
+      model: the model we're fine-tuning
+      mode: the fine-tuning mode we're using; may be 'all', 'last', 'first',
+        'middle', or 'loraN' (where N is an integer)
+    Returns:
+        new model with LORA wrapper
+    """
+    if model.__class__.__name__ == "GPT2LMHeadModel":
+        layers = model.transformer.h
+    elif model.__class__.__name__ == "BertLMHeadModel" or model.__class__.__name__ == "BertForSequenceClassification":
+        layers = model.bert.encoder.layer
+    else:
+        raise ValueError(
+            f"Unrecognized model class {model.__class__.__name__}. Check add_lora function in ft.py"
+        )
+    layers_to_add = []
+    if mode == "all":
+        layers_to_add = layers
+    elif mode == "last":
+        layers_to_add = layers[-num_layers:]
+    elif mode == "first":
+        layers_to_add = layers[: num_layers]
+    elif mode == "middle":
+        num_layers = len(layers)
+        layers_to_add = layers[(num_layers+1) // 2 - (num_layers+1) // 2: (num_layers+1) // 2 + num_layers // 2]
+    elif mode == "none":
+        layers_to_add = []
+    elif mode.isnumeric():
+        layers_to_add = layers[int(mode):int(mode)+num_layers]
+    else:
+        raise ValueError(f"Unrecognized fine-tuning mode {mode}")
+    for m in layers_to_add:
+            if model.__class__.__name__ == "GPT2LMHeadModel":
+                m.mlp.c_fc = LoRALayerWrapper(m.mlp.c_fc, lora_k)
+                m.mlp.c_proj = LoRALayerWrapper(m.mlp.c_proj, lora_k)
+                m.attn.c_attn = LoRALayerWrapper(m.attn.c_attn, lora_k)
+                m.attn.c_proj = LoRALayerWrapper(m.attn.c_proj, lora_k)
+            else:
+                m.attention.self.query = LoRALayerWrapper(m.attention.self.query, lora_k)
+                m.attention.self.key = LoRALayerWrapper(m.attention.self.key, lora_k)
+                m.attention.self.value = LoRALayerWrapper(m.attention.self.value, lora_k)
+                m.attention.output.dense = LoRALayerWrapper(m.attention.output.dense, lora_k)
+                m.intermediate.dense = LoRALayerWrapper(m.intermediate.dense, lora_k)
+                m.output.dense = LoRALayerWrapper(m.output.dense, lora_k)
 
-def parameters_to_fine_tune(model: nn.Module, mode: str) -> Iterable[nn.Parameter]:
+    return layers_to_add, model
+
+def parameters_to_fine_tune(model: nn.Module, mode: str, num_layers=1, lora_layers = None) -> Iterable[nn.Parameter]:
     """
     Select the parameters in `model` that should be fine-tuned in mode `mode`.
     Args:
@@ -74,25 +127,35 @@ def parameters_to_fine_tune(model: nn.Module, mode: str) -> Iterable[nn.Paramete
         )
     parameters_to_fine_tune: List[nn.Parameter] = None
     if mode == "all":
-        parameters_to_fine_tune = model.parameters()
+        layers_to_fine_tune = layers
     elif mode == "last":
-        parameters_to_fine_tune = layers[-args.num_layers:].parameters()
+        layers_to_fine_tune = layers[-num_layers:]
     elif mode == "first":
-        parameters_to_fine_tune = layers[: args.num_layers].parameters()
+        layers_to_fine_tune = layers[: num_layers]
     elif mode == "middle":
         num_layers = len(layers)
-        parameters_to_fine_tune = layers[(num_layers+1) // 2 - (args.num_layers+1) // 2: (num_layers+1) // 2 + args.num_layers // 2].parameters()
+        layers_to_fine_tune = layers[(num_layers+1) // 2 - (num_layers+1) // 2: (num_layers+1) // 2 + num_layers // 2]
     elif mode.isnumeric():
-        parameters_to_fine_tune = layers[int(mode)].parameters()
+        layers_to_fine_tune = layers[int(mode):int(mode)+num_layers]
     elif mode.startswith("lora"):
         raise NotImplementedError()
     else:
         raise ValueError(f"Unrecognized fine-tuning mode {mode}")
-
-    if parameters_to_fine_tune is None:
-        raise ValueError(
-            f"parameters_to_fine_tune should be a list of parameters, but is none for model: {model.__class__.__name__}. Check parameters_to_fine_tune function in ft.py"
-        )
+    
+    layers_to_fine_tune = set(layers_to_fine_tune)
+    lora_layers = set(lora_layers)
+    parameters_to_fine_tune = []
+    
+    non_lora_layers = layers_to_fine_tune - lora_layers
+    lora_layers = layers_to_fine_tune - non_lora_layers
+    
+    for layer in non_lora_layers:
+        parameters_to_fine_tune.extend(list(layer.parameters()))
+    
+    for layer in lora_layers:
+        for m in layer.modules():
+            if isinstance(m, LoRALayerWrapper):
+                parameters_to_fine_tune.extend([m.lora_A, m.lora_B])
 
     return parameters_to_fine_tune
 
@@ -238,10 +301,13 @@ def update_snr(model, relative_gradient_norm_list):
     # print(relative_gradient_norm_list)
     return relative_gradient_norm_list
 
-def ft_classification(model, tok, x, y, mode, batch_size=8):
+def ft_classification(model, tok, x, y, mode, num_layers, lora_mode, lora_k, batch_size=8):
     model = copy.deepcopy(model)
     print("Size of training set =", len(x), len(y))
 
+    if lora_mode == "same":
+        lora_mode = mode
+    lora_layers, _ = add_lora(model, lora_mode, lora_k, num_layers)
     # if mode.startswith("lora"):
     #     for m in model.transformer.h:
     #         m.mlp.c_fc = LoRALayerWrapper(m.mlp.c_fc, int(mode[4:]))
@@ -249,7 +315,7 @@ def ft_classification(model, tok, x, y, mode, batch_size=8):
 
     model.to(DEVICE)
     relative_gradient_norm_list = None
-    optimizer = torch.optim.Adam(parameters_to_fine_tune(model, mode), lr=1e-4)
+    optimizer = torch.optim.Adam(parameters_to_fine_tune(model, mode, num_layers, lora_layers), lr=1e-4)
     all_x = tok(
         x, return_tensors="pt", padding=True, truncation=True, max_length=100
     ).to(DEVICE)
@@ -268,7 +334,7 @@ def ft_classification(model, tok, x, y, mode, batch_size=8):
         logits = model(**x_).logits
         loss = get_loss(logits, y_)
         loss.backward()
-        relative_gradient_norm_list = update_snr(model, relative_gradient_norm_list)
+        # relative_gradient_norm_list = update_snr(model, relative_gradient_norm_list)
         optimizer.step()
         optimizer.zero_grad()
         if args.debug:
@@ -323,10 +389,13 @@ def tokenize_gpt2_batch(
     return combined_sequences
 
 
-def ft_generation(model, tok, x, y, mode, dataset, batch_size=8, grad_accum=8):
+def ft_generation(model, tok, x, y, mode, dataset, num_layers, lora_mode, lora_k, batch_size=8, grad_accum=8):
     x, y = utils.add_prefixes(x, y, dataset)
 
     model = copy.deepcopy(model)
+    if lora_mode == "same":
+        lora_mode = mode
+    lora_layers, _ = add_lora(model, lora_mode, lora_k, num_layers)
 
     # if mode.startswith("lora"):
     #     # if model is GPT2
@@ -338,7 +407,7 @@ def ft_generation(model, tok, x, y, mode, dataset, batch_size=8, grad_accum=8):
 
     model.to(DEVICE)
 
-    optimizer = torch.optim.Adam(parameters_to_fine_tune(model, mode), lr=2e-5)
+    optimizer = torch.optim.Adam(parameters_to_fine_tune(model, mode, num_layers, lora_layers), lr=2e-5)
     all_both = tokenize_gpt2_batch(tok, x, y)
     max_n = len(x) * 10
     pbar = tqdm.tqdm(range(max_n))
@@ -401,6 +470,9 @@ def run_ft(
     datasets: List[str],
     ks: List[int],
     modes: List[str],
+    num_layers_: List[int] = [1],
+    lora_k_: List[int] = [8],
+    lora_mode_: List[str] = ["all"],
     n_val: int = 200,
 ):
     results = {}
@@ -423,7 +495,7 @@ def run_ft(
                 )
             stop_tokens = utils.stop_tokens(tokenizer)
 
-            for k in ks:
+            for num_layers, lora_mode, lora_k, k in itertools.product(num_layers_, lora_mode_, lora_k_, ks):
                 utils.fix_random_seeds()
                 for repeat in range(args.repeats):
                     if repeat > 0:
@@ -439,9 +511,10 @@ def run_ft(
                                 train["x"][: k * utils.is_classification(dataset)],
                                 train["y"][: k * utils.is_classification(dataset)],
                                 mode,
+                                num_layers, lora_mode, lora_k
                             )
                         val_acc = eval(fine_tuned, tokenizer, val)
-                        results["_".join([model_name, dataset, str(k), mode])] = val_acc
+                        results["_".join([model_name, dataset, str(k), mode, str(num_layers), lora_mode, str(lora_k)])] = val_acc
                     else:
                         if k > 0:
                             fine_tuned = ft_generation(
@@ -478,7 +551,7 @@ def run_ft(
                                 predictions, targets, utils.metric_for_dataset(dataset)
                             )
                             pbar.set_description(f"Eval: {metric:.04f}")
-                        results["_".join([model_name, dataset, str(k), mode])] = metric
+                        results["_".join([model_name, dataset, str(k), mode, str(num_layers), lora_mode, str(lora_k)])] = metric
 
                     print(results)
                     question = "ft"
@@ -490,7 +563,7 @@ def run_ft(
                             f"Writing results to: {utils.RESULTS_DIR}/{question}/{k_}.json"
                         )
                         with open(
-                            f"{utils.RESULTS_DIR}/{question}/{k_}.json", "w+"
+                            f"{utils.RESULTS_DIR}/{question}/{k_}.json", "a+"
                         ) as f:
                             json.dump({"metric": v}, f)
                     results = {}
@@ -500,20 +573,28 @@ def run_ft(
                             os.makedirs(f"{utils.RESULTS_DIR}/models")
                         torch.save(
                             fine_tuned.state_dict(),
-                            f"{utils.RESULTS_DIR}/models/{model_name}_{dataset}_{k}_{mode}.pt",
+                            f"{utils.RESULTS_DIR}/models/" + "_".join([model_name, dataset, str(k), mode, str(num_layers), lora_mode, str(lora_k)]) + ".pt",
                         )
+                    
+                    del fine_tuned
 
 
 def run():
     ks = [int(k) for k in args.k.split(",")]
+    num_layers_ = [int(k) for k in args.num_layers.split(",")]
+    lora_k_ = [int(k) for k in args.lora_k.split(",")]
+    lora_mode_ = args.lora_mode.split(",")
     if args.task == "ft":
-        run_ft(args.model.split(","), args.dataset.split(","), ks, args.mode.split(","))
+        run_ft(args.model.split(","), args.dataset.split(","), ks, args.mode.split(","), num_layers_, lora_k_, lora_mode_)
     elif args.task == "plot":
         utils.plot_ft(
             args.model.split(","),
             args.dataset.split(","),
             ks,
             args.mode.split(","),
+            num_layers_,
+            lora_k_,
+            lora_mode_,
             args.plot_name,
         )
 

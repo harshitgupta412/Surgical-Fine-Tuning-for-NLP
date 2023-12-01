@@ -25,7 +25,6 @@ RESULTS_DIR = (
 print(f"Using results dir: {RESULTS_DIR}")
 glue_datasets = ["sst2", "cola", "mrpc", "qnli", "rte", "wnli"]
 
-
 def is_classification(dataset):
     ### name of original dataset should not contain _aug ###
     dataset_dict = {"amazon": 5, "sst2": 2, "cola": 2, "mrpc": 2, "qnli": 2, "rte": 2, 
@@ -357,7 +356,7 @@ def fix_random_seeds(seed=123, set_system=True, set_torch=True):
 #     plt.savefig(output_path, bbox_inches="tight")
 
 
-def plot_ft(models, datasets, ks, modes, output_path: str):
+def plot_ft(models, datasets, ks, modes, output_path: str, num_layers_, lora_k_, lora_mode_,):
     data = defaultdict(lambda: defaultdict(list))
     question = "ft"
 
@@ -365,9 +364,9 @@ def plot_ft(models, datasets, ks, modes, output_path: str):
     k = ks[0]
     model = models[0]
     for dataset in datasets:
-        for mode in modes:
-            fn = "_".join([model, dataset, str(k), mode])
-            id_ = "_".join([model, dataset])
+        for mode, num_layers, lora_k, lora_mode in itertools.product(modes, num_layers_, lora_k_, lora_mode_):
+            fn = "_".join([model, dataset, str(k), mode, str(num_layers), lora_mode, str(lora_k)])
+            id_ = "_".join([model, dataset, mode, str(num_layers), lora_mode, str(lora_k)])
             with open(f"{RESULTS_DIR}/{question}/{fn}.json", "r") as f:
                 score = json.load(f)["metric"]
                 if mode=="all":
@@ -436,3 +435,9 @@ def add_prefixes(x: List[str], y: List[str], dataset: str) -> Tuple[List[str], L
     y = [" " + y_.replace("\n", " ") + label_suffix for y_ in y]
 
     return x, y
+
+def get_memory_usage(device):
+    print("Memory Usage:")
+    print("Allocated:" , round(torch.cuda.memory_allocated(device)/1024**3,1), "GB")
+    print("Cached:   " , round(torch.cuda.memory_reserved(device)/1024**3,1), "GB")
+    print("Total:    " , round(torch.cuda.get_device_properties(device).total_memory/1024**3,1), "GB")
