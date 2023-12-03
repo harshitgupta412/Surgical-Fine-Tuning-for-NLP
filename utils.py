@@ -20,7 +20,7 @@ LOG = logging.getLogger(__name__)
 datasets.logging.set_verbosity_error()
 
 RESULTS_DIR = (
-    "results" if "RESULTS_DIR" not in os.environ else os.environ["RESULTS_DIR"]
+    "./results"
 )
 print(f"Using results dir: {RESULTS_DIR}")
 glue_datasets = ["sst2", "cola", "mrpc", "qnli", "rte", "wnli"]
@@ -356,17 +356,18 @@ def fix_random_seeds(seed=123, set_system=True, set_torch=True):
 #     plt.savefig(output_path, bbox_inches="tight")
 
 
-def plot_ft(models, datasets, ks, modes, output_path: str, num_layers_, lora_k_, lora_mode_,):
+def plot_ft(models, datasets, ks, modes, num_layers_, lora_k_, lora_mode_,output_path: str):
     data = defaultdict(lambda: defaultdict(list))
     question = "ft"
 
     x_vals = set()
     k = ks[0]
     model = models[0]
+    print(modes, num_layers_, lora_k_, lora_mode_)
     for dataset in datasets:
         for mode, num_layers, lora_k, lora_mode in itertools.product(modes, num_layers_, lora_k_, lora_mode_):
             fn = "_".join([model, dataset, str(k), mode, str(num_layers), lora_mode, str(lora_k)])
-            id_ = "_".join([model, dataset, mode, str(num_layers), lora_mode, str(lora_k)])
+            id_ = "_".join([model, dataset, str(num_layers), lora_mode, str(lora_k)])
             with open(f"{RESULTS_DIR}/{question}/{fn}.json", "r") as f:
                 score = json.load(f)["metric"]
                 if mode=="all":
